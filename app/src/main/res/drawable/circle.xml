@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="30dp"
+    android:height="30dp"
+    android:viewportWidth="30"
+    android:viewportHeight="30">
+    <path
+        android:fillColor="@color/card_view2"
+    android:pathData="M15,0 C23.81,0 30,6.19 30,15 C30,23.81 23.81,30 15,30 C6.19,30 0,23.81 0,15 C0,6.19 6.19,0 15,0 Z" />
+</vector>

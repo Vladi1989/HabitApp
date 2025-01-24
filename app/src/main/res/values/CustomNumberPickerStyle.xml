@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Стиль для NumberPicker -->
+    <style name="CustomNumberPickerStyle">
+        <item name="android:textColor">#FFFFFF</item> <!-- Белый цвет текста -->
+        <item name="android:textSize">20sp</item>   <!-- Размер шрифта -->
+    </style>
+</resources>

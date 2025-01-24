@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/login_ui_bg_color"
+    tools:context=".main.navigation_fragment.b.recommend_your_way.MainFragmentBYourWay">
+
+    <!-- Текст "Ваш путь" -->
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="10dp"
+        android:fontFamily="@font/montserrat_extra_bold"
+        android:gravity="center"
+        android:text="Ваш путь"
+        android:textSize="30dp"
+        android:textColor="@color/text_default_light"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <!-- Обертка для скроллинга -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="10dp"
+        android:paddingBottom="90dp"
+        app:layout_constraintTop_toBottomOf="@id/textView"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent">
+
+        <!-- Контейнер для элементов -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <!-- Текст "Рекомендовано для вас" -->
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="12dp"
+                android:layout_marginTop="15dp"
+                android:fontFamily="@font/montserrat_extra_bold"
+                android:gravity="center"
+                android:text="Рекомендовано для вас"
+                android:textColor="@color/text_default_light"
+                android:textSize="15dp" />
+
+            <!-- Горизонтальный RecyclerView -->
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rvRecommend"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:layout_marginTop="20dp"
+                android:orientation="horizontal"
+                tools:listitem="@layout/item_your_way_horizontal"
+                app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager" />
+
+            <!-- Текст "Все пути" -->
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="12dp"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/montserrat_extra_bold"
+                android:gravity="center"
+                android:text="Все пути"
+                android:textColor="@color/text_default_light"
+                android:textSize="30dp" />
+
+            <!-- Вертикальный RecyclerView -->
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rvVerticalRecommend"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:orientation="vertical"
+                android:layout_marginHorizontal="20dp"
+                tools:listitem="@layout/item_your_way_vertical" />
+
+        </LinearLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

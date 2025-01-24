@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/button_shape_graffit_r12_top_corners"
+    android:orientation="vertical">
+
+    <FrameLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center">
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:elevation="2dp"
+            android:src="@drawable/ic_img_finish_one"
+            android:layout_gravity="center"/>
+
+        <ImageView
+            android:id="@+id/glowingCircle"
+            android:layout_width="160dp"
+            android:layout_height="160dp"
+            android:elevation="1dp"
+            android:src="@drawable/ic_glow_circle"
+            android:visibility="visible"
+            android:layout_gravity="center"/>
+
+        <ImageView
+            android:id="@+id/glowingCircle2"
+            android:layout_width="180dp"
+            android:layout_height="180dp"
+            android:src="@drawable/ic_glow_circle2"
+            android:visibility="visible"
+            android:layout_gravity="center"/>
+
+    </FrameLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp"
+        android:text="Поздравляем!"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:textColor="#969393" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="6dp"
+        android:text="Поздравляем!"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:fontFamily="@font/montserrat_extra_bold"
+        android:textColor="@color/white" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp"
+        android:text="Сегодня вы выполнили все\nзапланированные привычки!"
+        android:textSize="18sp"
+        android:gravity="center"
+        android:textColor="@color/white" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnSave"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_weight="1"
+        android:text="Продолжайте"
+        android:layout_marginHorizontal="30dp"
+        android:background="@drawable/button_shape_blue_light_r24"
+        android:textColor="@android:color/white"
+        android:textSize="16sp"
+        android:fontFamily="@font/montserrat_extra_bold"
+        />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="30dp"/>
+
+
+</LinearLayout>

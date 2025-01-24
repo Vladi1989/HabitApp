@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:height="60dp" android:width="60dp" android:viewportWidth="60" android:viewportHeight="60">
+    <group android:translateY="-0.4905">
+        <group android:rotation="8" android:translateX="23.1124" android:translateY="0.4905">
+            <group android:scaleX="-1" android:scaleY="-1" android:rotation="-48" android:translateX="37.9086" android:translateY="10.5915">
+                <path android:pathData="M11.0272887 7.37206097L12.5012907 11.5323374C13.4153107 14.1121007 15.242307 16.2678988 17.6372507 17.5926085L22.1656522 20.0973929L22.1656522 20.0973929" android:strokeColor="#ffffff" android:strokeWidth="5.6" android:strokeLineCap="round"/>
+            </group>
+            <group android:rotation="21" android:translateX="9.5611" android:translateY="-9.7686">
+                <path android:pathData="M24.725132 16.8464557L26.0083258 18.5416757C28.7352048 22.1441402 33.8076765 22.9760423 37.5423897 20.4333003L37.5423897 20.4333003L37.5423897 20.4333003" android:strokeColor="#ffffff" android:strokeWidth="5.6" android:strokeLineCap="round"/>
+            </group>
+            <group android:scaleX="-1" android:rotation="-9" android:translateX="15.649" android:translateY="-1.2316">
+                <path android:pathData="M1.3828996 23.2853527L6.77446912 26.4217336C10.4495262 28.5595859 15.0230091 28.4096745 18.5501772 26.0357449L18.5501772 26.0357449L18.5501772 26.0357449" android:strokeColor="#ffffff" android:strokeWidth="5.6" android:strokeLineCap="round" android:strokeLineJoin="round"/>
+            </group>
+            <group android:rotation="21" android:translateX="13.6378" android:translateY="-5.5039">
+                <path android:pathData="M15.5398005 27.9957517L17.7733186 29.4955393C21.4268373 31.9488447 24.5493059 35.1122806 26.9547827 38.7974655L27.7941621 40.0833928L27.7941621 40.0833928" android:strokeColor="#ffffff" android:strokeWidth="5.6" android:strokeLineCap="round"/>
+            </group>
+            <group android:rotation="21" android:translateX="8.4229" android:translateY="-6.6176">
+                <path android:pathData="M20.38332 24.07942L23.74512 14.74871" android:strokeColor="#ffffff" android:strokeWidth="8.8" android:strokeLineCap="round"/>
+            </group>
+            <path android:fillColor="#ffffff" android:pathData="M30.4201955 11.2574102C33.4577616 11.2574102 35.9201955 8.7949763 35.9201955 5.75741017C35.9201955 2.71984405 33.4577616 0.257410175 30.4201955 0.257410175C27.3826294 0.257410175 24.9201955 2.71984405 24.9201955 5.75741017C24.9201955 8.7949763 27.3826294 11.2574102 30.4201955 11.2574102L30.4201955 11.2574102Z"/>
+        </group>
+        <group android:scaleX="-1" android:rotation="0" android:translateX="52">
+            <path android:fillColor="#ffffff" android:pathData="M37.9989987 35.4023786L26.9902161 35.4023786C26.4425559 35.4023786 25.9967795 35.8429009 25.9902864 36.3905227L25.9378071 40.8166132C25.9313141 41.3642349 25.4855376 41.8047572 24.9378774 41.8047572L14.0010013 41.8047572C13.4487165 41.8047572 13.0010013 42.2524725 13.0010013 42.8047572L13.0010013 47.2031715C13.0010013 47.7554562 12.553286 48.2031715 12.0010013 48.2031715L1 48.2031715C0.44771525 48.2031715 -0.00000000000000006763538 48.6508867 0 49.2031715L0 60C0.000000000000003991855 60.5522847 0.44771525 61 1 61L12.0010013 61C12.553286 61 13.0010013 60.5522847 13.0010013 60L13.0010013 55.6015858C13.0010013 55.049301 13.4487165 54.6015858 14.0010013 54.6015858L25.0020027 54.6015858C25.5542874 54.6015858 26.0020027 54.1538705 26.0020027 53.6015858L26.0020027 49.2031715C26.0020027 48.6508867 26.4497179 48.2031715 27.0020027 48.2031715L37.9989987 48.2031715C38.5512835 48.2031715 38.9989987 47.7554562 38.9989987 47.2031715L38.9989987 42.8007929C38.9989987 42.2485081 39.446714 41.8007929 39.9989987 41.8007929L51 41.8007929C51.5522847 41.8007929 52 41.3530776 52 40.8007929L52 30.0039643C52 29.4516796 51.5522847 29.0039643 51 29.0039643L39.9989987 29.0039643C39.446714 29.0039643 38.9989987 29.4516796 38.9989987 30.0039643L38.9989987 34.4023786C38.9989987 34.9546634 38.5512835 35.4023786 37.9989987 35.4023786Z"/>
+        </group>
+    </group>
+</vector>

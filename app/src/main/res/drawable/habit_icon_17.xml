@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:height="60dp" android:width="60dp" android:viewportWidth="60" android:viewportHeight="60">
+    <group android:translateX="9.8497" android:translateY="6">
+        <path android:fillColor="#ffffff" android:pathData="M13.2937782 6.47508046C13.2937782 10.0534144 16.1905247 12.9501609 19.7688587 12.9501609C23.3471926 12.9501609 26.2439391 10.0534144 26.2439391 6.47508046C26.2439391 2.89674652 23.3471926 0 19.7688587 0C16.1905247 0 13.2937782 2.89674652 13.2937782 6.47508046Z"/>
+        <group android:translateX="2.2938" android:translateY="38">
+            <path android:pathData="M18 0.2106979L34.411 3.559712" android:strokeColor="#ffffff" android:strokeWidth="7" android:strokeLineCap="round"/>
+            <path android:pathData="M18 7.203793L34.62929 3.559712" android:strokeColor="#ffffff" android:strokeWidth="7" android:strokeLineCap="round"/>
+            <group android:scaleX="-1" android:rotation="0" android:translateX="16.411">
+                <path android:pathData="M0.0000000000003436437 0.000000000000001554312L16.411 3.349014" android:strokeColor="#ffffff" android:strokeWidth="7" android:strokeLineCap="round"/>
+            </group>
+            <group android:scaleX="-1" android:rotation="0" android:translateX="17.6189">
+                <path android:pathData="M0.00000000000001598721 7.203793L17.61893 3.349014" android:strokeColor="#ffffff" android:strokeWidth="7" android:strokeLineCap="round"/>
+            </group>
+        </group>
+        <path android:pathData="M19.79378 35.00264L19.79378 20.4439" android:strokeColor="#ffffff" android:strokeWidth="11" android:strokeLineCap="round"/>
+        <group android:rotation="1" android:translateX="0.4809" android:translateY="-0.5194">
+            <path android:pathData="M21.2937782 19L27.8146742 26.8546379C28.4948793 27.6739677 29.266344 28.4130155 30.1141016 29.0574435L38.706373 35.5889097L38.706373 35.5889097" android:strokeColor="#ffffff" android:strokeWidth="7" android:strokeLineCap="round"/>
+        </group>
+        <group android:scaleX="-1" android:rotation="-1" android:translateX="19.2285" android:translateY="-0.1678">
+            <path android:pathData="M1 19.0025638L7.23565387 26.5136179C8.10361745 27.5591091 9.11916515 28.4726692 10.2503472 29.225557L18.6999194 34.8493906L18.6999194 34.8493906" android:strokeColor="#ffffff" android:strokeWidth="7" android:strokeLineCap="round"/>
+        </group>
+    </group>
+</vector>

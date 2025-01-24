@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/button_shape_graffit_r12"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <TextView
+        android:id="@+id/titleTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/montserrat_extra_bold"
+        android:text="Удалить все данные?"
+        android:textSize="18sp"
+        android:textColor="@color/white"
+        android:gravity="center"
+        android:paddingBottom="8dp" />
+
+    <TextView
+        android:id="@+id/messageTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Вы уверены, что хотите сбросить настройки приложения и удалить все данные?"
+        android:textSize="16sp"
+        android:textColor="#8A8A8A"
+        android:gravity="center"
+        android:paddingBottom="16dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center">
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/positiveButton"
+            android:layout_width="wrap_content"
+            android:elevation="1dp"
+            android:textColor="@color/white"
+            android:background="@drawable/button_shape_blue_light_r12"
+            android:layout_height="wrap_content"
+            android:text="Отмена" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/negativeButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:elevation="1dp"
+            android:textColor="@color/white"
+            android:background="@drawable/button_shape_blue_light_r12"
+            android:text="Ок"
+            android:layout_marginStart="16dp" />
+
+    </LinearLayout>
+
+</LinearLayout>

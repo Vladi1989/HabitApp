@@ -1,0 +1,235 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    android:gravity="center">
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:gravity="center">
+
+        <TextView
+            android:id="@+id/dayOfWeek1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Пн"
+            android:textSize="15dp"
+            android:textColor="#888C90" />
+
+        <TextView
+            android:id="@+id/day1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="1"
+            android:textSize="20dp"
+            android:fontFamily="@font/montserrat_extra_bold"
+            android:textColor="#888C90" />
+
+        <View
+            android:id="@+id/indicator1"
+            android:layout_width="20dp"
+            android:layout_height="3dp"
+            android:layout_gravity="center_horizontal"
+            android:background="@color/primary"
+            android:visibility="gone" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:gravity="center">
+
+        <TextView
+            android:id="@+id/dayOfWeek2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Вт"
+            android:textSize="15dp"
+            android:textColor="#888C90" />
+
+        <TextView
+            android:id="@+id/day2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="2"
+            android:textSize="20dp"
+            android:fontFamily="@font/montserrat_extra_bold"
+            android:textColor="#888C90" />
+        <View
+            android:id="@+id/indicator2"
+            android:layout_width="20dp"
+            android:layout_height="3dp"
+            android:layout_gravity="center_horizontal"
+            android:background="@color/primary"
+            android:visibility="gone" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:gravity="center">
+
+        <TextView
+            android:id="@+id/dayOfWeek3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Ср"
+            android:textSize="15dp"
+            android:textColor="#888C90" />
+
+        <TextView
+            android:id="@+id/day3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/montserrat_extra_bold"
+            android:text="3"
+            android:textColor="#888C90"
+            android:textSize="20dp" />
+        <View
+            android:id="@+id/indicator3"
+            android:layout_width="20dp"
+            android:layout_height="3dp"
+            android:layout_gravity="center_horizontal"
+            android:background="@color/primary"
+            android:visibility="gone" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:gravity="center">
+
+        <TextView
+            android:id="@+id/dayOfWeek4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Чт"
+            android:textSize="15dp"
+            android:textColor="#888C90" />
+
+        <TextView
+            android:id="@+id/day4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="4"
+            android:textSize="20dp"
+            android:fontFamily="@font/montserrat_extra_bold"
+            android:textColor="#888C90" />
+        <View
+            android:id="@+id/indicator4"
+            android:layout_width="20dp"
+            android:layout_height="3dp"
+            android:layout_gravity="center_horizontal"
+            android:background="@color/primary"
+            android:visibility="gone" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:gravity="center">
+
+        <TextView
+            android:id="@+id/dayOfWeek5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Пт"
+            android:textSize="15dp"
+            android:textColor="#888C90" />
+
+        <TextView
+            android:id="@+id/day5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/montserrat_extra_bold"
+            android:text="5"
+            android:textColor="#888C90"
+            android:textSize="20dp" />
+        <View
+            android:id="@+id/indicator5"
+            android:layout_width="20dp"
+            android:layout_height="3dp"
+            android:layout_gravity="center_horizontal"
+            android:background="@color/primary"
+            android:visibility="gone" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:gravity="center">
+
+        <TextView
+            android:id="@+id/dayOfWeek6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Сб"
+            android:textSize="15dp"
+            android:textColor="#888C90" />
+
+        <TextView
+            android:id="@+id/day6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="6"
+            android:textSize="20dp"
+            android:fontFamily="@font/montserrat_extra_bold"
+            android:textColor="#888C90" />
+        <View
+            android:id="@+id/indicator6"
+            android:layout_width="20dp"
+            android:layout_height="3dp"
+            android:layout_gravity="center_horizontal"
+            android:background="@color/primary"
+            android:visibility="gone" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:gravity="center">
+
+        <TextView
+            android:id="@+id/dayOfWeek7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Вс"
+            android:textSize="15dp"
+            android:textColor="#888C90"/>
+
+        <TextView
+            android:id="@+id/day7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="7"
+            android:textSize="20dp"
+            android:fontFamily="@font/montserrat_extra_bold"
+            android:textColor="#888C90" />
+        <View
+            android:id="@+id/indicator7"
+            android:layout_width="20dp"
+            android:layout_height="3dp"
+            android:layout_gravity="center_horizontal"
+            android:background="@color/primary"
+            android:visibility="gone" />
+    </LinearLayout>
+</LinearLayout>
+

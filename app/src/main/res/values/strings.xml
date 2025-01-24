@@ -1,0 +1,44 @@
+<resources>
+    <string name="app_name">HabitTracker</string>
+    <string name="arg">EXIT</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_loading">HABIT TRACKER &amp; GOAL PLANNER</string>
+    <string name="tick_it">TICK IT!</string>
+    <string name="what_time">В какой время вы обычно встаете?</string>
+    <string name="what_time_sleep">В какой время вы обычно заканчиваете свой день?</string>
+    <string name="create_plan">Создаем ваш план привычек...</string>
+    <string name="become_a_better_person">Станьте лучше</string>
+    <string name="what_do_you_want">Какова ваша цель?</string>
+    <string name="choose_time_go_up">Выберите ваше обычное время подъема</string>
+    <string name="choose_time_go_sleep">Перед этим мы напомним вам проверить свой список</string>
+    <string name="choosing_habits">Выбираем привычки для вашей цели...</string>
+    <string name="start_your_self">Начните увлекательный путь к вашему будущему \"Я\"</string>
+    <string name="help_us">Помогите нам лучше понять, что вам требуется</string>
+    <string name="choose_first">Выберите первую привычку, которую вы хотели бы выработать</string>
+    <string name="number_picker_formatter">%02d</string>
+    <string name="plan">Планируйте ежедневные занятия со списком привычек</string>
+    <string name="start_now">Начните сейчас</string>
+    <string name="next">Следующее</string>
+    <string name="miss">Пропустить</string>
+    <string name="sleep_8_hours">Спите не менее 8 часов</string>
+    <string name="food">Ешьте здоровую пищу</string>
+    <string name="drink">Пейте 8 стаканов воды</string>
+    <string name="exersize">Упражнения</string>
+    <string name="go">Ходите пешком</string>
+    <string name="today_navigaiton">Сегодня</string>
+    <string name="your_way">Ваш путь</string>
+    <string name="history">История</string>
+    <string name="me">Я</string>
+    <string name="today">Сегодня</string>
+    <string name="name_habit">Имя привычки</string>
+    <string name="create_new_habit">Создайте новую привычку</string>
+    <string name="regular">Регулярная</string>
+    <string name="life">Здоровый образ жизни</string>
+    <string name="vred">Вредная</string>
+    <string name="discription_regular">Часть ваших повседневных привычек.\nРегулярно помечайте их как выполненные.\nНапример: йога три раза в неделю.</string>
+    <string name="btn_create">+ СОЗДАТЬ</string>
+    <string name="habit_in_trend">Привычки в тренде</string>
+    <string name="habit_on_the_world">Идите в ногу со всем миром</string>
+    <string name="info_sound">Выбранный звуковой эффект будет использован для общих напоминаний. Для конкретных привычек эффекты можно выбирать отдельно.</string>
+
+</resources>

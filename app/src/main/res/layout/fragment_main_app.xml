@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".main.MainAppFragment">
+
+    <androidx.fragment.app.FragmentContainerView
+        android:id="@+id/fcvMainApp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+    <LinearLayout
+        android:id="@+id/llNavigation"
+        android:visibility="visible"
+        android:elevation="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:padding="12dp"
+        android:background="@drawable/rounded_top_corners_nav"
+        android:orientation="horizontal"
+        app:layout_constraintDimensionRatio="992:208"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:gravity="center">
+
+            <ImageView
+                android:id="@+id/btnNavA"
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:src="@drawable/ic_icon_botbar_today_on" />
+
+            <TextView
+                android:id="@+id/tvNavA"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:text="@string/today_navigaiton"
+                android:textColor="@color/icon_gray"
+                android:textSize="12sp"
+                android:gravity="center" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:gravity="center">
+
+            <ImageView
+                android:id="@+id/btnNavB"
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:src="@drawable/ic_icon_botbar_journey_on" />
+
+            <TextView
+                android:id="@+id/tvNavB"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:text="@string/your_way"
+                android:textColor="@color/icon_gray"
+                android:textSize="12sp"
+                android:gravity="center" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:gravity="center">
+
+            <ImageView
+                android:id="@+id/btnNavC"
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:src="@drawable/ic_icon_botbar_report_on" />
+
+            <TextView
+                android:id="@+id/tvNavC"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:text="@string/history"
+                android:textColor="@color/icon_gray"
+                android:textSize="12sp"
+                android:gravity="center" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:gravity="center">
+
+            <ImageView
+                android:id="@+id/btnNavD"
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:src="@drawable/ic_icon_botbar_me_on" />
+
+            <TextView
+                android:id="@+id/tvNavD"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:text="@string/me"
+                android:textColor="@color/icon_gray"
+                android:textSize="12sp"
+                android:gravity="center" />
+        </LinearLayout>
+    </LinearLayout>
+
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
