@@ -10,10 +10,10 @@ import java.time.LocalDate
 
 class WeekPagerAdapter(
     private val weeks: List<List<LocalDate>>,
+    private var selectedDate:LocalDate,
     private val onDayClick: (LocalDate) -> Unit
 ) : RecyclerView.Adapter<WeekPagerAdapter.WeekViewHolder>() {
 
-    private var selectedDate: LocalDate? = null // Выбранная дата
 
     inner class WeekViewHolder(private val view: View) : RecyclerView.ViewHolder(view) {
         private val dayViews = listOf<TextView>(

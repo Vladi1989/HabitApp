@@ -2,6 +2,7 @@ package com.spase_y.habittracker.main
 
 import android.graphics.PorterDuff
 import android.os.Bundle
+import android.util.Log
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
@@ -9,6 +10,8 @@ import android.view.ViewGroup
 import android.widget.ImageView
 import android.widget.TextView
 import androidx.core.content.ContextCompat
+import androidx.core.os.bundleOf
+import com.spase_y.habittracker.MainActivity
 import com.spase_y.habittracker.R
 import com.spase_y.habittracker.databinding.FragmentMainAppBinding
 import com.spase_y.habittracker.main.navigation_fragment.a.MainFragmentAToday
@@ -80,13 +83,25 @@ class MainAppFragment : Fragment() {
         )
         textView.setTextColor(ContextCompat.getColor(requireContext(), R.color.gray))
     }
-    private fun changeFragment(fragment: Fragment){
+    fun openFragmentToday(selectedDay: Int) {
+        setActiveButton(binding.btnNavA, binding.tvNavA)
+        val fragment = MainFragmentAToday()
+        fragment.arguments = bundleOf(Pair("Day", selectedDay))
+        changeFragment(fragment)
+    }
+
+    fun changeFragment(fragment: Fragment){
         requireActivity().supportFragmentManager.beginTransaction()
             .replace(R.id.fcvMainApp,fragment)
             .addToBackStack(null)
             .commit()
     }
-
+    companion object {
+        fun Fragment.openFragmentToday(selectedDay: Int) {
+            val mainFragment = requireActivity().supportFragmentManager.fragments[0]
+            (mainFragment as MainAppFragment).openFragmentToday(selectedDay)
+        }
+    }
     override fun onDestroyView() {
         super.onDestroyView()
         _binding = null

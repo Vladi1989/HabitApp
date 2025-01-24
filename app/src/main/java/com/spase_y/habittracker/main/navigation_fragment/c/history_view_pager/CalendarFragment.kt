@@ -1,6 +1,7 @@
 package com.spase_y.habittracker.main.navigation_fragment.c.history_view_pager
 
 import android.os.Bundle
+import android.os.Handler
 import android.view.Gravity
 import android.view.LayoutInflater
 import android.view.View
@@ -9,6 +10,8 @@ import android.widget.GridLayout
 import android.widget.TextView
 import androidx.fragment.app.Fragment
 import com.spase_y.habittracker.R
+import com.spase_y.habittracker.main.MainAppFragment.Companion.openFragmentToday
+import kotlinx.coroutines.flow.combine
 import java.util.Calendar
 
 class CalendarFragment : Fragment() {
@@ -42,30 +45,40 @@ class CalendarFragment : Fragment() {
         // Очищаем предыдущую сетку
         gridDays.removeAllViews()
 
-        // Добавляем пустые ячейки до первого дня
-        val emptyCells = (firstDayOfWeek - 1) % 7 // Индексируем с ВС
-        for (i in 0 until emptyCells) {
-            addDayCell("")
-        }
+        Handler().postDelayed({
 
-        // Добавляем числа месяца
-        for (day in 1..daysInMonth) {
-            addDayCell(day.toString())
-        }
+            // Добавляем пустые ячейки до первого дня
+            val emptyCells = (firstDayOfWeek - 1) % 7 // Индексируем с ВС
+            for (i in 0 until emptyCells) {
+                addDayCell("")
+            }
+
+            // Добавляем числа месяца
+            for (day in 1..daysInMonth) {
+                addDayCell(day.toString())
+            }
+        }, 10)
     }
 
     private fun addDayCell(day: String) {
+        val cellSize = gridDays.width / 7
         val textView = TextView(requireContext()).apply {
             text = day
             gravity = Gravity.CENTER
             textSize = 16f
             layoutParams = GridLayout.LayoutParams().apply {
                 width = 0
-                height = ViewGroup.LayoutParams.WRAP_CONTENT
+                height = cellSize - 8
                 columnSpec = GridLayout.spec(GridLayout.UNDEFINED, 1f)
                 setMargins(4, 4, 4, 4)
+            }
+            if (day != "") {
+                setOnClickListener {
+                    openFragmentToday(day.toInt())
+                }
             }
         }
         gridDays.addView(textView)
     }
+
 }

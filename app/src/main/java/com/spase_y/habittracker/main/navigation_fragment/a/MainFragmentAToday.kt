@@ -2,6 +2,7 @@ package com.spase_y.habittracker.main.navigation_fragment.a
 
 import android.content.res.ColorStateList
 import android.os.Bundle
+import android.util.Log
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
@@ -18,7 +19,9 @@ import com.spase_y.habittracker.databinding.FragmentMainATodayBinding
 import com.spase_y.habittracker.main.navigation_fragment.a.create_new_habit.CreateNewHabitFragment
 import java.time.DayOfWeek
 import java.time.LocalDate
+import java.time.temporal.ChronoField
 import java.time.temporal.TemporalAdjusters
+import java.util.Date
 
 class MainFragmentAToday : Fragment() {
 
@@ -35,6 +38,13 @@ class MainFragmentAToday : Fragment() {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
+
+        var localDate = LocalDate.now()
+        val selectedDayFromHistory = arguments?.getInt("Day")
+        if (selectedDayFromHistory != null) {
+            localDate = LocalDate.now().withDayOfMonth(selectedDayFromHistory)
+            onDateSelect(localDate)
+        }
 
         binding.btnGoToCreateNewHabitFragment.setOnClickListener {
             requireActivity().supportFragmentManager.beginTransaction()
@@ -77,20 +87,21 @@ class MainFragmentAToday : Fragment() {
         }
 
         // Определение первого дня текущей недели (понедельника)
-        val startDate = LocalDate.now().with(TemporalAdjusters.previousOrSame(DayOfWeek.MONDAY))
+        val startDate = LocalDate.now().withDayOfYear(1)
         val weeks = generateWeeks(startDate, 52) // Генерация недель на год
 
         // Настройка адаптера для ViewPager2
-        val adapter = WeekPagerAdapter(weeks) { date ->
+        val adapter = WeekPagerAdapter(weeks, localDate) { date ->
             // Обработка нажатий на конкретный день
-            Toast.makeText(requireContext(), "Вы выбрали: $date", Toast.LENGTH_SHORT).show()
+            onDateSelect(date)
         }
 
         // Привязка адаптера к ViewPager
         binding.viewPager.adapter = adapter
 
         // Установка текущей недели (например, середина года)
-        binding.viewPager.setCurrentItem(26, false)
+        val currentWeek = LocalDate.now().get(ChronoField.ALIGNED_WEEK_OF_YEAR) - 1
+        binding.viewPager.setCurrentItem(currentWeek, false)
 
 
 
@@ -98,6 +109,14 @@ class MainFragmentAToday : Fragment() {
         habitsAdapter.listHabits = habitsManager.getAllHabits()
         binding.rvHabits.adapter = habitsAdapter
     }
+
+    private fun onDateSelect(date: LocalDate) {
+        val localDate = LocalDate.now()
+        binding.textView.text = date.toString()
+        Toast.makeText(requireContext(), "Вы выбрали: $date", Toast.LENGTH_SHORT).show()
+
+    }
+
     val habitsAdapter = HabitsAdapter()
 
     val habitsManager by lazy {

@@ -62,6 +62,7 @@ class MainFragmentCHistory : Fragment() {
                 else -> null
             }
         }.attach()
+
     }
     private fun showShareOptionsBottomSheet() {
         val bottomSheetDialog = BottomSheetDialog(requireContext())

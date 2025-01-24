@@ -1,6 +1,7 @@
 package com.spase_y.habittracker.main.navigation_fragment.b.recommend_your_way
 
 import android.os.Bundle
+import android.util.Log
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
@@ -29,12 +30,12 @@ class MainFragmentBYourWay : Fragment() {
 
         // Данные для RecyclerView
         val adapter = HorizontalRecommendAdapter(horizontalItems){item ->
-            val fragment = TopicDetailsFragment().apply {
+            val fragment = TopicDetailsFragment()
+            fragment.arguments =
                 bundleOf(
                     Pair("title", item.title),
                     Pair("data", Gson().toJson(item.data)),
                 )
-            }
             requireActivity().supportFragmentManager.beginTransaction()
                 .replace(R.id.fcvMainApp,fragment)
                 .addToBackStack(null)
@@ -87,12 +88,45 @@ val sample = FullRoadTopicData(
 
 
 val horizontalItems = listOf(
-    HorizontalRecommendItem("МЕНЬШЕ ТЕЛЕФОНА\n- БОЛЬШЕ СДЕЛАНО", "30", R.drawable.phone1, sample),
-    HorizontalRecommendItem("Пейте больше воды", "8", R.drawable.b_horizontal_2, sample),
-    HorizontalRecommendItem("Занимайтесь йогой", "15", R.drawable.b_horizontal_3, sample),
+    HorizontalRecommendItem("Ритуалы перед\nсном", R.drawable.b_list1,
+        FullRoadTopicData(
+            R.drawable.sleep_girl,
+            "Научно доказано, что определенные\nритуалы перед сном позволяют справится с нарушениями сна и избыточным стрессом",
+            listOf(
+                Pair(R.drawable.habit_icon_176, "Попращайтесь с\nбессонницей "),
+                Pair(R.drawable.habit_icon_151, "Засыпайте\nбыстрее и\nкрепче"),
+                Pair(R.drawable.habit_icon_27, "Больше сил\nи творческой\nэнергии"),
+                Pair(R.drawable.abc_ic_menu_paste_mtrl_am_alpha, "Здоровое\nрасписание"),
+            ),
+            listOf(
+                "Укрепите душевное здоровье",
+                "Укрепление связей с семьей",
+                "Более эффективная работа мозга",
 
-    )
+                ),
+        ),
+        "8"
+    ),
+    HorizontalRecommendItem("Ритуалы перед\nсном", R.drawable.b_list1,
+        FullRoadTopicData(
+            R.drawable.sleep_girl,
+            "Научно доказано, что определенные\nритуалы перед сном позволяют справится с нарушениями сна и избыточным стрессом",
+            listOf(
+                Pair(R.drawable.habit_icon_176, "Попращайтесь с\nбессонницей "),
+                Pair(R.drawable.habit_icon_151, "Засыпайте\nбыстрее и\nкрепче"),
+                Pair(R.drawable.habit_icon_27, "Больше сил\nи творческой\nэнергии"),
+                Pair(R.drawable.abc_ic_menu_paste_mtrl_am_alpha, "Здоровое\nрасписание"),
+            ),
+            listOf(
+                "Укрепите душевное здоровье",
+                "Укрепление связей с семьей",
+                "Более эффективная работа мозга",
 
+                ),
+        ),
+        "30"
+    ),
+)
 
 val verticalItems = listOf(
     VerticalRecommendItem("Ритуалы перед\nсном", R.drawable.b_list1,
