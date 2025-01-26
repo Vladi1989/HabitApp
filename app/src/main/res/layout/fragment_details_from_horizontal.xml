@@ -42,17 +42,17 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="12dp"
-                android:layout_marginTop="140dp"
                 android:fontFamily="@font/montserrat_extra_bold"
                 android:shadowColor="@color/black"
                 android:shadowDx="3"
+                android:layout_marginTop="50dp"
                 android:shadowDy="3"
                 android:shadowRadius="3"
                 android:text="МЕНЬШЕ ТЕЛЕФОНА\n- БОЛЬШЕ СДЕЛАНО"
                 android:textColor="@color/text_default_light"
                 android:textSize="22dp"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/ivArrowBack" />
+                app:layout_constraintTop_toTopOf="parent" />
 
             <TextView
                 android:id="@+id/textView2"

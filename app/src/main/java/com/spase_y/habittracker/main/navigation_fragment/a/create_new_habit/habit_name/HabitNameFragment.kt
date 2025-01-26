@@ -17,6 +17,7 @@ import com.spase_y.habittracker.data.RegularHabit
 import com.spase_y.habittracker.databinding.BottomSheetIconsBinding
 import com.spase_y.habittracker.databinding.FragmentHabitNameBinding
 import com.spase_y.habittracker.databinding.FragmentMainCHistoryBinding
+import com.spase_y.habittracker.main.navigation_fragment.a.create_new_habit.habit_name.habit_days.HabitDaysFragment
 
 class HabitNameFragment : Fragment() {
     private var _binding: FragmentHabitNameBinding? = null
@@ -32,6 +33,13 @@ class HabitNameFragment : Fragment() {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
+
+        binding.llnotification1.setOnClickListener {
+            requireActivity().supportFragmentManager.beginTransaction()
+                .replace(R.id.fcvMainApp,HabitDaysFragment())
+                .addToBackStack(null)
+                .commit()
+        }
 
         // Кнопка назад
         binding.ivArrowCrossBack.setOnClickListener {
@@ -80,34 +88,15 @@ class HabitNameFragment : Fragment() {
     var currentSelectedColor = android.graphics.Color.WHITE
 
     private fun showIconPicker() {
-        // Список иконок
-        val icons = listOf(
-            R.drawable.habit_icon_1,
-            R.drawable.habit_icon_2,
-            R.drawable.habit_icon_3,
-            R.drawable.habit_icon_4,
-            R.drawable.habit_icon_5,
-            R.drawable.habit_icon_6,
-            R.drawable.habit_icon_7,
-            R.drawable.habit_icon_8,
-            R.drawable.habit_icon_9,
-            R.drawable.habit_icon_10,
-            R.drawable.habit_icon_11,
-            R.drawable.habit_icon_12,
-            R.drawable.habit_icon_13,
-            R.drawable.habit_icon_14,
-            R.drawable.habit_icon_15,
-            R.drawable.habit_icon_16,
-            R.drawable.habit_icon_17,
-            R.drawable.habit_icon_18,
-            R.drawable.habit_icon_19,
-            R.drawable.habit_icon_20,
-            R.drawable.habit_icon_21,
-            R.drawable.habit_icon_22,
-            R.drawable.habit_icon_23,
-            R.drawable.habit_icon_24,
+        val icons = mutableListOf<Int>() // Создаем изменяемый список иконок
 
-        )
+        // Заполняем список иконок с помощью цикла for
+        for (i in 1..80) {
+            val iconId = resources.getIdentifier("habit_icon_$i", "drawable", requireContext().packageName)
+            if (iconId != 0) { // Проверяем, что идентификатор найден
+                icons.add(iconId)
+            }
+        }
 
         // Создание BottomSheet с использованием ViewBinding
         val bottomSheetBinding = BottomSheetIconsBinding.inflate(layoutInflater)

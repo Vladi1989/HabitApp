@@ -88,39 +88,58 @@ val sample = FullRoadTopicData(
 
 
 val horizontalItems = listOf(
-    HorizontalRecommendItem("Ритуалы перед\nсном", R.drawable.b_list1,
+    HorizontalRecommendItem("Ходите для\nздоровья\nкаждый день", R.drawable.bg_horizont_1,
         FullRoadTopicData(
-            R.drawable.sleep_girl,
-            "Научно доказано, что определенные\nритуалы перед сном позволяют справится с нарушениями сна и избыточным стрессом",
+            R.drawable.bg_horizont_1,
+            "Это идеальное упражнение низкой интенсивности для людей в любой физической форме",
             listOf(
-                Pair(R.drawable.habit_icon_176, "Попращайтесь с\nбессонницей "),
-                Pair(R.drawable.habit_icon_151, "Засыпайте\nбыстрее и\nкрепче"),
-                Pair(R.drawable.habit_icon_27, "Больше сил\nи творческой\nэнергии"),
-                Pair(R.drawable.abc_ic_menu_paste_mtrl_am_alpha, "Здоровое\nрасписание"),
+                Pair(R.drawable.habit_icon_99, "Здоровый ИМТ"),
+                Pair(R.drawable.habit_icon_11, "Меньше боли\nв суставах"),
+                Pair(R.drawable.habit_icon_16, "Ниже давление\nи уровень сахара"),
+                Pair(R.drawable.habit_icon_32, "Лучшая работа кардиорес\nпираторной\nсистемы"),
             ),
             listOf(
-                "Укрепите душевное здоровье",
-                "Укрепление связей с семьей",
+                "Сильные имунная и \nпищеварительная системы",
+                "Продление жизни",
+                "Профилактика варикоза",
+
+                ),
+        ),
+        "30"
+    ),
+    HorizontalRecommendItem("Энергичное утро\nдля продуктивного\nдня", R.drawable.bg_horizont_2,
+        FullRoadTopicData(
+            R.drawable.bg_horizont_2,
+            "Утро задает тон для всего дня.\nНачно обоснованный набор\nутренних действий поможет разбудиться энергию\nвашего тела",
+            listOf(
+                Pair(R.drawable.habit_icon_12, "Раньше и легче\nвставать\nпо утрам"),
+                Pair(R.drawable.habit_icon_202, "Уверенность в\nсвоих силах"),
+                Pair(R.drawable.habit_icon_66, "Больше энергии!"),
+                Pair(R.drawable.ic_icon_journeystg_adapt, "Здоровое расписание"),
+            ),
+            listOf(
+                "Более правильный образ жизни",
+                "Сбалансированный иммунитет",
                 "Более эффективная работа мозга",
 
                 ),
         ),
-        "8"
+        "30"
     ),
-    HorizontalRecommendItem("Ритуалы перед\nсном", R.drawable.b_list1,
+    HorizontalRecommendItem("Сохраняйте\nформу в офисе", R.drawable.bg_horizont_3,
         FullRoadTopicData(
-            R.drawable.sleep_girl,
-            "Научно доказано, что определенные\nритуалы перед сном позволяют справится с нарушениями сна и избыточным стрессом",
+            R.drawable.bg_horizont_3,
+            "Если время от времени двигаться и не сидеть все время, это разбудт мозг и даст силы придумывать и творить.",
             listOf(
-                Pair(R.drawable.habit_icon_176, "Попращайтесь с\nбессонницей "),
-                Pair(R.drawable.habit_icon_151, "Засыпайте\nбыстрее и\nкрепче"),
-                Pair(R.drawable.habit_icon_27, "Больше сил\nи творческой\nэнергии"),
-                Pair(R.drawable.abc_ic_menu_paste_mtrl_am_alpha, "Здоровое\nрасписание"),
+                Pair(R.drawable.habit_icon_12, "Проводите\nменьше времени\nсидя"),
+                Pair(R.drawable.habit_icon_81, "Работайте\nэффективнее"),
+                Pair(R.drawable.ic_icon_journeystg_adapt, "Профилактика\nразличных\nзаболеваний"),
+                Pair(R.drawable.habit_icon_32, "Меньше\nхронического\nстресса"),
             ),
             listOf(
-                "Укрепите душевное здоровье",
-                "Укрепление связей с семьей",
-                "Более эффективная работа мозга",
+                "Лучше память!",
+                "Эффективно используйте перерывы",
+                "Уверенность в себе\nи хорошее настроение",
 
                 ),
         ),

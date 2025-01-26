@@ -19,9 +19,12 @@ import com.spase_y.habittracker.databinding.FragmentMainATodayBinding
 import com.spase_y.habittracker.main.navigation_fragment.a.create_new_habit.CreateNewHabitFragment
 import java.time.DayOfWeek
 import java.time.LocalDate
+import java.time.format.DateTimeFormatter
 import java.time.temporal.ChronoField
+import java.time.temporal.ChronoUnit
 import java.time.temporal.TemporalAdjusters
 import java.util.Date
+import java.util.Locale
 
 class MainFragmentAToday : Fragment() {
 
@@ -39,11 +42,39 @@ class MainFragmentAToday : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
+
         var localDate = LocalDate.now()
         val selectedDayFromHistory = arguments?.getInt("Day")
         if (selectedDayFromHistory != null) {
             localDate = LocalDate.now().withDayOfMonth(selectedDayFromHistory)
             onDateSelect(localDate)
+        }
+        val startDate = LocalDate.now().withDayOfYear(1)
+        val weeks = generateWeeks(startDate, 52) // Генерация недель на год
+
+        // Настройка адаптера для ViewPager2
+        val adapter = WeekPagerAdapter(weeks, localDate) { date ->
+            // Обработка нажатий на конкретный день
+            onDateSelect(date)
+            if (date != LocalDate.now()){
+                binding.buttonToday.visibility = View.VISIBLE
+            } else {
+                binding.buttonToday.visibility = View.INVISIBLE
+            }
+        }
+        binding.buttonToday.setOnClickListener {
+            // Устанавливаем текущую дату
+            val currentDate = LocalDate.now()
+            localDate = currentDate
+            binding.viewPager.adapter = adapter
+            adapter.notifyDataSetChanged()
+            binding.viewPager.setCurrentItem(
+                currentDate.get(ChronoField.ALIGNED_WEEK_OF_YEAR) - 1, false
+            )
+            onDateSelect(currentDate)
+
+            // Скрываем кнопку после возвращения на сегодня
+            binding.buttonToday.visibility = View.INVISIBLE
         }
 
         binding.btnGoToCreateNewHabitFragment.setOnClickListener {
@@ -87,14 +118,7 @@ class MainFragmentAToday : Fragment() {
         }
 
         // Определение первого дня текущей недели (понедельника)
-        val startDate = LocalDate.now().withDayOfYear(1)
-        val weeks = generateWeeks(startDate, 52) // Генерация недель на год
 
-        // Настройка адаптера для ViewPager2
-        val adapter = WeekPagerAdapter(weeks, localDate) { date ->
-            // Обработка нажатий на конкретный день
-            onDateSelect(date)
-        }
 
         // Привязка адаптера к ViewPager
         binding.viewPager.adapter = adapter
@@ -103,8 +127,6 @@ class MainFragmentAToday : Fragment() {
         val currentWeek = LocalDate.now().get(ChronoField.ALIGNED_WEEK_OF_YEAR) - 1
         binding.viewPager.setCurrentItem(currentWeek, false)
 
-
-
         binding.rvHabits.layoutManager = LinearLayoutManager(requireContext())
         habitsAdapter.listHabits = habitsManager.getAllHabits()
         binding.rvHabits.adapter = habitsAdapter
@@ -112,9 +134,17 @@ class MainFragmentAToday : Fragment() {
 
     private fun onDateSelect(date: LocalDate) {
         val localDate = LocalDate.now()
-        binding.textView.text = date.toString()
-        Toast.makeText(requireContext(), "Вы выбрали: $date", Toast.LENGTH_SHORT).show()
+        val daysDifference = ChronoUnit.DAYS.between(localDate, date)
 
+        val text = when (daysDifference) {
+            0L -> "Сегодня" // Если выбранная дата совпадает с текущей
+            1L -> "Завтра" // Если дата на 1 день больше текущей
+            -1L -> "Вчера" // Если дата на 1 день меньше текущей
+            else -> date.format(DateTimeFormatter.ofPattern("dd MMMM yyyy", Locale("ru"))) // Если это другая дата
+        }
+
+        binding.textView.text = text
+        Toast.makeText(requireContext(), "Вы выбрали: $text", Toast.LENGTH_SHORT).show()
     }
 
     val habitsAdapter = HabitsAdapter()

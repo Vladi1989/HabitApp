@@ -5,6 +5,7 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.transition.Visibility
 import com.spase_y.habittracker.R
 import com.spase_y.habittracker.databinding.FragmentHabitDaysBinding
 
@@ -23,8 +24,24 @@ class HabitDaysFragment : Fragment() {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
+
         binding.ivArrowBack1.setOnClickListener {
             requireActivity().onBackPressedDispatcher.onBackPressed()
+        }
+        binding.llWeekClose.setOnClickListener {
+            binding.llMounthClose.visibility = View.VISIBLE
+            binding.llMounthOpen.visibility = View.INVISIBLE
+            binding.llYearOpen.visibility = View.INVISIBLE
+        }
+        binding.llmMonthClose.setOnClickListener {
+            binding.llMounthClose.visibility = View.INVISIBLE
+            binding.llMounthOpen.visibility = View.VISIBLE
+            binding.llYearOpen.visibility = View.INVISIBLE
+        }
+        binding.llmYearClose.setOnClickListener {
+            binding.llMounthClose.visibility = View.INVISIBLE
+            binding.llMounthOpen.visibility = View.INVISIBLE
+            binding.llYearOpen.visibility = View.VISIBLE
         }
     }
 
