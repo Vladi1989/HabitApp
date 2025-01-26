@@ -6,6 +6,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.core.content.ContextCompat
+import androidx.core.os.bundleOf
 import com.spase_y.habittracker.R
 import com.spase_y.habittracker.databinding.FragmentCreateNewHabitBinding
 import com.spase_y.habittracker.main.navigation_fragment.a.create_new_habit.habit_name.HabitNameFragment
@@ -36,6 +37,7 @@ class CreateNewHabitFragment : Fragment() {
 
         // Обработчики кликов для CardView
         binding.cardView1.setOnClickListener {
+            habitTypeId = 1
             isSelectedCard1 = true
             isSelectedCard2 = false
             isSelectedCard3 = false
@@ -46,6 +48,7 @@ class CreateNewHabitFragment : Fragment() {
         }
 
         binding.cardView2.setOnClickListener {
+            habitTypeId = 2
             isSelectedCard1 = false
             isSelectedCard2 = true
             isSelectedCard3 = false
@@ -56,6 +59,7 @@ class CreateNewHabitFragment : Fragment() {
         }
 
         binding.cardView3.setOnClickListener {
+            habitTypeId = 3
             isSelectedCard1 = false
             isSelectedCard2 = false
             isSelectedCard3 = true
@@ -67,12 +71,18 @@ class CreateNewHabitFragment : Fragment() {
 
         // Пример обработчика для перехода
         binding.btnGoToHabitName.setOnClickListener {
+            val fragment = HabitNameFragment()
+            fragment.arguments = bundleOf(
+                Pair("HabitType", habitTypeId)
+            )
             requireActivity().supportFragmentManager.beginTransaction()
-                .replace(R.id.fcvMainApp, HabitNameFragment())
+                .replace(R.id.fcvMainApp, fragment)
                 .addToBackStack(null)
                 .commit()
         }
     }
+
+    var habitTypeId = 1
 
     override fun onDestroyView() {
         super.onDestroyView()

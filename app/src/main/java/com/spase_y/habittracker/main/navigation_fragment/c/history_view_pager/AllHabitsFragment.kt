@@ -5,6 +5,8 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import com.spase_y.habittracker.MainActivity.Companion.getSharedPreferences
+import com.spase_y.habittracker.data.HabitsManger
 import com.spase_y.habittracker.databinding.FragmentAllHabitsBinding
 
 class AllHabitsFragment : Fragment() {
@@ -21,6 +23,10 @@ class AllHabitsFragment : Fragment() {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
+
+        val manager = HabitsManger(getSharedPreferences())
+        val habits = manager.getAllHabits()
+        binding.tvHabitsCount.text
     }
 
     override fun onDestroyView() {

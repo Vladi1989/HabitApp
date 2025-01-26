@@ -13,6 +13,8 @@ import com.spase_y.habittracker.R
 import com.spase_y.habittracker.data.Days
 import com.spase_y.habittracker.data.HabitSettings
 import com.spase_y.habittracker.data.HabitsManger
+import com.spase_y.habittracker.data.HarmfulHabit
+import com.spase_y.habittracker.data.OneTimeHabit
 import com.spase_y.habittracker.data.RegularHabit
 import com.spase_y.habittracker.databinding.BottomSheetIconsBinding
 import com.spase_y.habittracker.databinding.FragmentHabitNameBinding
@@ -33,6 +35,8 @@ class HabitNameFragment : Fragment() {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
+
+        val habitId = requireArguments().getInt("HabitType")
 
         binding.llnotification1.setOnClickListener {
             requireActivity().supportFragmentManager.beginTransaction()
@@ -72,21 +76,55 @@ class HabitNameFragment : Fragment() {
 
         binding.btnGoToStartD.setOnClickListener {
             val manager = HabitsManger(getSharedPreferences())
-            manager.addHabit(
-                RegularHabit(
-                    binding.etHabitName.text.toString(),
-                    R.drawable.habit_icon_100,
-                    currentSelectedColor,
-                    System.currentTimeMillis(),
-                    listOf(Days.EVERYDAY)
+            val habitName = binding.etHabitName.text.toString()
+            val habitIcon = currentSelectedIcon
+            val habitDays = listOf(Days.EVERYDAY)
+            if (habitId == 1) {
+                manager.addHabit(
+                    RegularHabit(
+                        habitName,
+                        habitIcon,
+                        currentSelectedColor,
+                        System.currentTimeMillis(),
+                        habitDays
+                    )
                 )
-            )
+            } else if (habitId == 2) {
+                manager.addHabit(
+                    HarmfulHabit(
+                        habitName,
+                        habitIcon,
+                        currentSelectedColor,
+                        System.currentTimeMillis(),
+                    )
+                )
+            } else if (habitId == 3) {
+                manager.addHabit(
+                    OneTimeHabit(
+                        habitName,
+                        habitIcon,
+                        currentSelectedColor,
+                        System.currentTimeMillis(),
+                        System.currentTimeMillis(),
+                    )
+                )
+            }
             requireActivity().onBackPressedDispatcher.onBackPressed()
         }
+
+        currentSelectedColor = _currentSelectedColor
+        val drawable = ContextCompat.getDrawable(requireContext(), R.drawable.circle_color)
+        drawable?.setTint(currentSelectedColor)
+        binding.colorPickerCircle.background = drawable
+        binding.imageView10.setColorFilter(currentSelectedColor)
     }
 
-    var currentSelectedColor = android.graphics.Color.WHITE
+    val _currentSelectedColor by lazy {
+        ContextCompat.getColor(requireContext(), R.color.primary)
+    }
+    var currentSelectedColor = android.graphics.Color.BLACK
 
+    var currentSelectedIcon = R.drawable.habit_icon_4
     private fun showIconPicker() {
         val icons = mutableListOf<Int>() // Создаем изменяемый список иконок
 
@@ -109,6 +147,8 @@ class HabitNameFragment : Fragment() {
             // Замена иконки в imageView10
             binding.imageView10.setImageResource(selectedIcon)
             bottomSheetDialog.dismiss()
+
+            currentSelectedIcon = selectedIcon
         }
 
         // Показать BottomSheet

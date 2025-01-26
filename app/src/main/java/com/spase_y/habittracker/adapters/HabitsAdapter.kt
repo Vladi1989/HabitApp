@@ -1,5 +1,6 @@
 package com.spase_y.habittracker.adapters
 
+import android.content.res.ColorStateList
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
@@ -20,17 +21,17 @@ class HabitsAdapter(): RecyclerView.Adapter<HabitsAdapter.VH>() {
                 is RegularHabit -> {
                     binding.textView.text = habitSettings.name
                     binding.imageView3.setImageResource(habitSettings.icon)
-                    binding.imageView3.drawable?.setTint(habitSettings.iconColor)
+                    binding.clBg.setBackgroundTintList(ColorStateList.valueOf(habitSettings.iconColor))
                 }
                 is OneTimeHabit -> {
                     binding.textView.text = habitSettings.name
                     binding.imageView3.setImageResource(habitSettings.icon)
-                    binding.imageView3.drawable?.setTint(habitSettings.iconColor)
+                    binding.clBg.setBackgroundTintList(ColorStateList.valueOf(habitSettings.iconColor))
                 }
                 is HarmfulHabit -> {
                     binding.textView.text = habitSettings.name
                     binding.imageView3.setImageResource(habitSettings.icon)
-                    binding.imageView3.drawable?.setTint(habitSettings.iconColor)
+                    binding.clBg.setBackgroundTintList(ColorStateList.valueOf(habitSettings.iconColor))
                 }
             }
 

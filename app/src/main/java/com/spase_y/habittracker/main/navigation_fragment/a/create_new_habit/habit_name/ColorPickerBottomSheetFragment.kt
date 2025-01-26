@@ -22,7 +22,6 @@ class ColorPickerBottomSheetFragment(
 
         val colorPalette = view.findViewById<GridLayout>(R.id.colorPalette)
         val colors = listOf(
-            android.graphics.Color.WHITE,
             android.graphics.Color.RED,
             android.graphics.Color.BLUE,
             android.graphics.Color.GREEN,
