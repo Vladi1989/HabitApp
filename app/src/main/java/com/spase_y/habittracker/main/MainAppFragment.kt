@@ -83,10 +83,12 @@ class MainAppFragment : Fragment() {
         )
         textView.setTextColor(ContextCompat.getColor(requireContext(), R.color.gray))
     }
-    fun openFragmentToday(selectedDay: Int) {
+    fun openFragmentToday(selectedDay: Int = -1) {
         setActiveButton(binding.btnNavA, binding.tvNavA)
         val fragment = MainFragmentAToday()
-        fragment.arguments = bundleOf(Pair("Day", selectedDay))
+        if (selectedDay != -1) {
+            fragment.arguments = bundleOf(Pair("Day", selectedDay))
+        }
         changeFragment(fragment)
     }
 
@@ -97,7 +99,7 @@ class MainAppFragment : Fragment() {
             .commit()
     }
     companion object {
-        fun Fragment.openFragmentToday(selectedDay: Int) {
+        fun Fragment.openFragmentToday(selectedDay: Int = -1) {
             val mainFragment = requireActivity().supportFragmentManager.fragments[0]
             (mainFragment as MainAppFragment).openFragmentToday(selectedDay)
         }

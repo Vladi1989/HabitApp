@@ -49,6 +49,13 @@ class MainFragmentAToday : Fragment() {
             localDate = LocalDate.now().withDayOfMonth(selectedDayFromHistory)
             onDateSelect(localDate)
         }
+
+        if (localDate != LocalDate.now()){
+            binding.buttonToday.visibility = View.VISIBLE
+        } else {
+            binding.buttonToday.visibility = View.INVISIBLE
+        }
+
         val startDate = LocalDate.now().withDayOfYear(1)
         val weeks = generateWeeks(startDate, 52) // Генерация недель на год
 
@@ -66,8 +73,17 @@ class MainFragmentAToday : Fragment() {
             // Устанавливаем текущую дату
             val currentDate = LocalDate.now()
             localDate = currentDate
-            binding.viewPager.adapter = adapter
-            adapter.notifyDataSetChanged()
+
+            val adapter2 = WeekPagerAdapter(weeks, localDate) { date ->
+                // Обработка нажатий на конкретный день
+                onDateSelect(date)
+                if (date != LocalDate.now()){
+                    binding.buttonToday.visibility = View.VISIBLE
+                } else {
+                    binding.buttonToday.visibility = View.INVISIBLE
+                }
+            }
+            binding.viewPager.adapter = adapter2
             binding.viewPager.setCurrentItem(
                 currentDate.get(ChronoField.ALIGNED_WEEK_OF_YEAR) - 1, false
             )
@@ -124,7 +140,7 @@ class MainFragmentAToday : Fragment() {
         binding.viewPager.adapter = adapter
 
         // Установка текущей недели (например, середина года)
-        val currentWeek = LocalDate.now().get(ChronoField.ALIGNED_WEEK_OF_YEAR) - 1
+        val currentWeek = localDate.get(ChronoField.ALIGNED_WEEK_OF_YEAR) - 1
         binding.viewPager.setCurrentItem(currentWeek, false)
 
         binding.rvHabits.layoutManager = LinearLayoutManager(requireContext())
@@ -144,7 +160,6 @@ class MainFragmentAToday : Fragment() {
         }
 
         binding.textView.text = text
-        Toast.makeText(requireContext(), "Вы выбрали: $text", Toast.LENGTH_SHORT).show()
     }
 
     val habitsAdapter = HabitsAdapter()
