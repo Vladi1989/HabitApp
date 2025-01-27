@@ -29,18 +29,27 @@ class HabitDaysFragment : Fragment() {
             requireActivity().onBackPressedDispatcher.onBackPressed()
         }
         binding.llWeekClose.setOnClickListener {
+            binding.llmYearClose.visibility  = View.VISIBLE
+            binding.llmMonthClose.visibility  = View.VISIBLE
+            binding.llWeekClose.visibility  = View.GONE
             binding.llMounthClose.visibility = View.VISIBLE
-            binding.llMounthOpen.visibility = View.INVISIBLE
-            binding.llYearOpen.visibility = View.INVISIBLE
+            binding.llMounthOpen.visibility = View.GONE
+            binding.llYearOpen.visibility = View.GONE
         }
         binding.llmMonthClose.setOnClickListener {
-            binding.llMounthClose.visibility = View.INVISIBLE
+            binding.llmYearClose.visibility  = View.VISIBLE
+            binding.llWeekClose.visibility  = View.VISIBLE
+            binding.llmMonthClose.visibility  = View.GONE
+            binding.llMounthClose.visibility = View.GONE
             binding.llMounthOpen.visibility = View.VISIBLE
-            binding.llYearOpen.visibility = View.INVISIBLE
+            binding.llYearOpen.visibility = View.GONE
         }
         binding.llmYearClose.setOnClickListener {
-            binding.llMounthClose.visibility = View.INVISIBLE
-            binding.llMounthOpen.visibility = View.INVISIBLE
+            binding.llmMonthClose.visibility  = View.VISIBLE
+            binding.llWeekClose.visibility  = View.VISIBLE
+            binding.llmYearClose.visibility  = View.GONE
+            binding.llMounthClose.visibility = View.GONE
+            binding.llMounthOpen.visibility = View.GONE
             binding.llYearOpen.visibility = View.VISIBLE
         }
     }

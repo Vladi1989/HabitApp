@@ -6,6 +6,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.core.content.ContextCompat
+import androidx.navigation.fragment.findNavController
 import androidx.recyclerview.widget.GridLayoutManager
 import com.google.android.material.bottomsheet.BottomSheetDialog
 import com.spase_y.habittracker.MainActivity.Companion.getSharedPreferences
@@ -19,6 +20,7 @@ import com.spase_y.habittracker.data.RegularHabit
 import com.spase_y.habittracker.databinding.BottomSheetIconsBinding
 import com.spase_y.habittracker.databinding.FragmentHabitNameBinding
 import com.spase_y.habittracker.databinding.FragmentMainCHistoryBinding
+import com.spase_y.habittracker.main.navigation_fragment.a.MainFragmentAToday
 import com.spase_y.habittracker.main.navigation_fragment.a.create_new_habit.habit_name.habit_days.HabitDaysFragment
 
 class HabitNameFragment : Fragment() {
@@ -75,6 +77,7 @@ class HabitNameFragment : Fragment() {
 
 
         binding.btnGoToStartD.setOnClickListener {
+
             val manager = HabitsManger(getSharedPreferences())
             val habitName = binding.etHabitName.text.toString()
             val habitIcon = currentSelectedIcon
@@ -109,7 +112,10 @@ class HabitNameFragment : Fragment() {
                     )
                 )
             }
-            requireActivity().onBackPressedDispatcher.onBackPressed()
+            requireActivity().supportFragmentManager.beginTransaction()
+                .replace(R.id.fcvMainApp,MainFragmentAToday())
+                .addToBackStack(null)
+                .commit()
         }
 
         currentSelectedColor = _currentSelectedColor

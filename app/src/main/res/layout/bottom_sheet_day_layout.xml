@@ -4,7 +4,7 @@
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:orientation="vertical"
-    android:background="@drawable/button_shape_graffit_r12_top_corners"
+    android:background="@drawable/button_shape_r12_gray"
     android:padding="16dp">
 
     <TextView
@@ -42,7 +42,7 @@
             android:layout_weight="1"
             android:layout_marginStart="3dp"
             android:layout_marginEnd="3dp"
-            android:background="@drawable/button_shape_blue_light_r12"
+            android:background="@drawable/button_shape_graffit_light_r12"
             android:text="S"
             android:textSize="18sp"
             android:textColor="@android:color/white" />
@@ -55,7 +55,7 @@
             android:layout_weight="1"
             android:layout_marginStart="3dp"
             android:layout_marginEnd="3dp"
-            android:background="@drawable/button_shape_blue_light_r12"
+            android:background="@drawable/button_shape_graffit_light_r12"
             android:text="M"
             android:textSize="18sp"
             android:textColor="@android:color/white" />
@@ -68,7 +68,7 @@
             android:layout_weight="1"
             android:layout_marginStart="3dp"
             android:layout_marginEnd="3dp"
-            android:background="@drawable/button_shape_blue_light_r12"
+            android:background="@drawable/button_shape_graffit_light_r12"
 
             android:text="T"
             android:textSize="18sp"
@@ -82,7 +82,7 @@
             android:layout_weight="1"
             android:layout_marginStart="3dp"
             android:layout_marginEnd="3dp"
-            android:background="@drawable/button_shape_blue_light_r12"
+            android:background="@drawable/button_shape_graffit_light_r12"
 
             android:text="W"
             android:textSize="18sp"
@@ -96,7 +96,7 @@
             android:layout_weight="1"
             android:layout_marginStart="3dp"
             android:layout_marginEnd="3dp"
-            android:background="@drawable/button_shape_blue_light_r12"
+            android:background="@drawable/button_shape_graffit_light_r12"
 
             android:text="T"
             android:textSize="18sp"
@@ -110,7 +110,7 @@
             android:layout_weight="1"
             android:layout_marginStart="3dp"
             android:layout_marginEnd="3dp"
-            android:background="@drawable/button_shape_blue_light_r12"
+            android:background="@drawable/button_shape_graffit_light_r12"
 
             android:text="F"
             android:textSize="18sp"
@@ -124,7 +124,7 @@
             android:layout_weight="1"
             android:layout_marginStart="3dp"
             android:layout_marginEnd="3dp"
-            android:background="@drawable/button_shape_blue_light_r12"
+            android:background="@drawable/button_shape_graffit_light_r12"
 
             android:text="S"
             android:textSize="18sp"
@@ -145,7 +145,7 @@
             android:layout_height="60dp"
             android:layout_weight="1"
             android:text="Отмена"
-            android:background="@drawable/button_shape_graffit_light_r24"
+            android:background="@drawable/button_shape_graffit_light_r12"
             android:textColor="@android:color/white"
             android:textSize="16sp"
             android:fontFamily="@font/montserrat_extra_bold"
@@ -157,7 +157,7 @@
             android:layout_height="60dp"
             android:layout_weight="1"
             android:text="Сохранить"
-            android:background="@drawable/button_shape_blue_light_r24"
+            android:background="@drawable/button_shape_blue_light_r12"
             android:textColor="@android:color/white"
             android:textSize="16sp"
             android:fontFamily="@font/montserrat_extra_bold"
