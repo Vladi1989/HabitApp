@@ -8,15 +8,13 @@ import android.widget.Button
 import androidx.appcompat.widget.AppCompatButton
 import com.google.android.material.bottomsheet.BottomSheetDialogFragment
 import com.spase_y.habittracker.R
+import com.spase_y.habittracker.data.Days
 import com.spase_y.habittracker.databinding.BottomSheetDayLayoutBinding
 
-class MyBottomSheetDayFragment : BottomSheetDialogFragment() {
+class MyBottomSheetDayFragment(private var selectedDays: MutableList<Days>, val onSave: (List<Days>) -> Unit) : BottomSheetDialogFragment() {
 
     private var _binding: BottomSheetDayLayoutBinding? = null
     private val binding get() = _binding!!
-
-    // Храним выбранные дни недели
-    private val selectedDays = mutableSetOf<String>()
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
@@ -30,17 +28,18 @@ class MyBottomSheetDayFragment : BottomSheetDialogFragment() {
         super.onViewCreated(view, savedInstanceState)
 
         // Настройка кнопок для дней недели
-        setupDayButton(binding.buttonSunday, "ВС")
-        setupDayButton(binding.buttonMonday, "ПН")
-        setupDayButton(binding.buttonTuesday, "ВТ")
-        setupDayButton(binding.buttonWednesday, "СР")
-        setupDayButton(binding.buttonThursday, "ЧТ")
-        setupDayButton(binding.buttonFriday, "ПТ")
-        setupDayButton(binding.buttonSaturday, "СБ")
+        setupDayButton(binding.buttonSunday, Days.SUNDAY)
+        setupDayButton(binding.buttonMonday, Days.MONDAY)
+        setupDayButton(binding.buttonTuesday, Days.TUESDAY)
+        setupDayButton(binding.buttonWednesday, Days.WEDNESDAY)
+        setupDayButton(binding.buttonThursday, Days.THURSDAY)
+        setupDayButton(binding.buttonFriday, Days.FRIDAY)
+        setupDayButton(binding.buttonSaturday, Days.SATURDAY)
 
         // Установка действий для кнопок сохранения/отмены
         binding.btnSave.setOnClickListener {
             // Логика для сохранения выбранных дней
+            onSave.invoke(selectedDays)
             dismiss()
         }
 
@@ -48,9 +47,37 @@ class MyBottomSheetDayFragment : BottomSheetDialogFragment() {
             // Логика для отмены
             dismiss()
         }
+
+        if (selectedDays.size == 1) {
+            if (selectedDays[0] == Days.EVERYDAY) {
+                selectedDays = mutableListOf(
+                    Days.MONDAY,
+                    Days.TUESDAY,
+                    Days.WEDNESDAY,
+                    Days.THURSDAY,
+                    Days.FRIDAY,
+                    Days.SUNDAY,
+                    Days.SATURDAY,
+                )
+            }
+        }
+        updateSelectedDaysText()
+        selectedDays.forEach {
+            when (it) {
+                Days.MONDAY -> { binding.buttonMonday.setBackgroundResource(R.drawable.button_shape_blue_light_r12) }
+                Days.TUESDAY -> { binding.buttonTuesday.setBackgroundResource(R.drawable.button_shape_blue_light_r12) }
+                Days.WEDNESDAY -> { binding.buttonWednesday.setBackgroundResource(R.drawable.button_shape_blue_light_r12) }
+                Days.THURSDAY -> { binding.buttonThursday.setBackgroundResource(R.drawable.button_shape_blue_light_r12) }
+                Days.FRIDAY -> { binding.buttonFriday.setBackgroundResource(R.drawable.button_shape_blue_light_r12) }
+                Days.SUNDAY -> { binding.buttonSunday.setBackgroundResource(R.drawable.button_shape_blue_light_r12) }
+                Days.SATURDAY -> { binding.buttonSaturday.setBackgroundResource(R.drawable.button_shape_blue_light_r12) }
+                Days.EVERYDAY -> {}
+            }
+
+        }
     }
 
-    private fun setupDayButton(button: AppCompatButton, day: String) {
+    private fun setupDayButton(button: AppCompatButton, day: Days) {
         button.setOnClickListener {
             if (selectedDays.contains(day)) {
                 // Если день уже выбран — убираем выбор

@@ -53,7 +53,7 @@
                     android:paddingTop="10dp"
                     android:paddingBottom="10dp"
                     android:layout_marginStart="10dp"
-                    android:text="Общие напоминания"
+                    android:text="Звуковые эффекты"
                     android:textColor="@color/text_default_light"
                     android:textSize="20dp" />
 
@@ -68,286 +68,179 @@
                     android:trackTint="@drawable/switch_track_tint" />
         </LinearLayout>
 
-        <LinearLayout
-            android:id="@+id/linearLayout10"
+
+        <androidx.cardview.widget.CardView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginHorizontal="20dp"
-            android:orientation="horizontal"
-            android:paddingVertical="20dp"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/llnotification1">
+            app:cardBackgroundColor="#313747"
+            app:cardCornerRadius="20dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginHorizontal="15dp"
+            app:layout_constraintTop_toBottomOf="@+id/llnotification1">
 
-                <TextView
-                    android:id="@+id/textView8"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center_vertical"
-                    android:layout_marginStart="15dp"
-                    android:layout_weight="1"
-                    android:fontFamily="@font/montserrat_extra_bold"
-                    android:text="Звук"
-                    android:textColor="@color/white"
-                    android:textSize="22dp" />
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
 
-                <ImageView
-                    android:layout_width="20dp"
-                    android:layout_height="20dp"
-                    android:layout_gravity="center_vertical"
-                    android:layout_marginEnd="10dp"
-                    android:src="@drawable/ic_icon_general_check"
-                    android:visibility="visible" />
+                        <LinearLayout
+                            android:id="@+id/linearLayout10"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginHorizontal="20dp"
+                            android:orientation="horizontal"
+                            android:paddingVertical="20dp"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@id/llnotification1">
 
-        </LinearLayout>
+                                <TextView
+                                    android:id="@+id/textView8"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center_vertical"
+                                    android:layout_marginStart="15dp"
+                                    android:layout_weight="1"
+                                    android:fontFamily="@font/montserrat_extra_bold"
+                                    android:text="Звук"
+                                    android:textColor="@color/white"
+                                    android:textSize="22dp" />
 
-        <View
-            android:id="@+id/view4"
-            android:layout_width="match_parent"
-            android:layout_height="3dp"
-            android:background="#BC6E727C"
-            android:elevation="10dp"
-            android:layout_marginStart="70dp"
-            app:layout_constraintTop_toBottomOf="@id/linearLayout10" />
+                                <ImageView
+                                    android:layout_width="20dp"
+                                    android:layout_height="20dp"
+                                    android:layout_gravity="center_vertical"
+                                    android:layout_marginEnd="10dp"
+                                    android:src="@drawable/ic_icon_general_check"
+                                    android:visibility="visible" />
 
-        <LinearLayout
-            android:id="@+id/linearLayout11"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginHorizontal="20dp"
-            android:orientation="horizontal"
-            android:paddingVertical="20dp"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/view4">
+                        </LinearLayout>
 
-                <TextView
-                    android:id="@+id/textView12"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center_vertical"
-                    android:layout_marginStart="15dp"
-                    android:layout_weight="1"
-                    android:fontFamily="@font/montserrat_extra_bold"
-                    android:text="Звук"
-                    android:textColor="@color/white"
-                    android:textSize="22dp" />
+                        <View
+                            android:id="@+id/view4"
+                            android:layout_width="match_parent"
+                            android:layout_height="3dp"
+                            android:layout_marginHorizontal="30dp"
+                            android:background="#BC6E727C"
+                            android:elevation="10dp"
+                            app:layout_constraintTop_toBottomOf="@id/linearLayout10" />
 
-                <ImageView
-                    android:layout_width="20dp"
-                    android:layout_height="20dp"
-                    android:layout_gravity="center_vertical"
-                    android:layout_marginEnd="10dp"
-                    android:src="@drawable/ic_icon_general_check"
-                    android:visibility="gone" />
+                        <LinearLayout
+                            android:id="@+id/linearLayout11"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginHorizontal="20dp"
+                            android:orientation="horizontal"
+                            android:paddingVertical="20dp"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/view4">
 
-        </LinearLayout>
+                                <TextView
+                                    android:id="@+id/textView12"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center_vertical"
+                                    android:layout_marginStart="15dp"
+                                    android:layout_weight="1"
+                                    android:fontFamily="@font/montserrat_extra_bold"
+                                    android:text="Звук"
+                                    android:textColor="@color/white"
+                                    android:textSize="22dp" />
 
-        <View
-            android:id="@+id/view5"
-            android:layout_width="match_parent"
-            android:layout_height="3dp"
-            android:background="#BC6E727C"
-            android:elevation="10dp"
-            android:layout_marginStart="70dp"
-            app:layout_constraintTop_toBottomOf="@id/linearLayout11" />
+                                <ImageView
+                                    android:layout_width="20dp"
+                                    android:layout_height="20dp"
+                                    android:layout_gravity="center_vertical"
+                                    android:layout_marginEnd="10dp"
+                                    android:src="@drawable/ic_icon_general_check"
+                                    android:visibility="gone" />
 
-        <LinearLayout
-            android:id="@+id/linearLayout12"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginHorizontal="20dp"
-            android:orientation="horizontal"
-            android:paddingVertical="20dp"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/view5">
+                        </LinearLayout>
 
-                <TextView
-                    android:id="@+id/textView11"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center_vertical"
-                    android:layout_marginStart="15dp"
-                    android:layout_weight="1"
-                    android:fontFamily="@font/montserrat_extra_bold"
-                    android:text="Звук"
-                    android:textColor="@color/white"
-                    android:textSize="22dp" />
+                        <View
+                            android:id="@+id/view5"
+                            android:layout_width="match_parent"
+                            android:layout_height="3dp"
+                            android:layout_marginHorizontal="30dp"
+                            android:background="#BC6E727C"
+                            android:elevation="10dp"
+                            app:layout_constraintTop_toBottomOf="@id/linearLayout11" />
 
-                <ImageView
-                    android:layout_width="20dp"
-                    android:layout_height="20dp"
-                    android:layout_gravity="center_vertical"
-                    android:layout_marginEnd="10dp"
-                    android:src="@drawable/ic_icon_general_check"
-                    android:visibility="gone" />
-        </LinearLayout>
+                        <LinearLayout
+                            android:id="@+id/linearLayout12"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginHorizontal="20dp"
+                            android:orientation="horizontal"
+                            android:paddingVertical="20dp"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/view5">
 
-        <View
-            android:id="@+id/view6"
-            android:layout_width="match_parent"
-            android:layout_height="3dp"
-            android:background="#BC6E727C"
-            android:elevation="10dp"
-            android:layout_marginStart="70dp"
-            app:layout_constraintTop_toBottomOf="@id/linearLayout12" />
+                                <TextView
+                                    android:id="@+id/textView11"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center_vertical"
+                                    android:layout_marginStart="15dp"
+                                    android:layout_weight="1"
+                                    android:fontFamily="@font/montserrat_extra_bold"
+                                    android:text="Звук"
+                                    android:textColor="@color/white"
+                                    android:textSize="22dp" />
 
-        <LinearLayout
-            android:id="@+id/linearLayout13"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginHorizontal="20dp"
-            android:orientation="horizontal"
-            android:paddingVertical="20dp"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/view6">
+                                <ImageView
+                                    android:layout_width="20dp"
+                                    android:layout_height="20dp"
+                                    android:layout_gravity="center_vertical"
+                                    android:layout_marginEnd="10dp"
+                                    android:src="@drawable/ic_icon_general_check"
+                                    android:visibility="gone" />
+                        </LinearLayout>
 
-                <TextView
-                    android:id="@+id/textView13"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center_vertical"
-                    android:layout_marginStart="15dp"
-                    android:layout_weight="1"
-                    android:fontFamily="@font/montserrat_extra_bold"
-                    android:text="Звук"
-                    android:textColor="@color/white"
-                    android:textSize="22dp" />
+                        <View
+                            android:id="@+id/view6"
+                            android:layout_width="match_parent"
+                            android:layout_height="3dp"
+                            android:layout_marginHorizontal="30dp"
+                            android:background="#BC6E727C"
+                            android:elevation="10dp"
+                            app:layout_constraintTop_toBottomOf="@id/linearLayout12" />
 
-                <ImageView
-                    android:layout_width="20dp"
-                    android:layout_height="20dp"
-                    android:layout_gravity="center_vertical"
-                    android:layout_marginEnd="10dp"
-                    android:src="@drawable/ic_icon_general_check"
-                    android:visibility="gone" />
+                        <LinearLayout
+                            android:id="@+id/linearLayout13"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginHorizontal="20dp"
+                            android:orientation="horizontal"
+                            android:paddingVertical="20dp"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@id/view6">
 
-        </LinearLayout>
+                                <TextView
+                                    android:id="@+id/textView13"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center_vertical"
+                                    android:layout_marginStart="15dp"
+                                    android:layout_weight="1"
+                                    android:fontFamily="@font/montserrat_extra_bold"
+                                    android:text="Звук"
+                                    android:textColor="@color/white"
+                                    android:textSize="22dp" />
 
-        <View
-            android:id="@+id/view8"
-            android:layout_width="match_parent"
-            android:layout_height="3dp"
-            android:background="#BC6E727C"
-            android:elevation="10dp"
-            android:layout_marginStart="70dp"
-            app:layout_constraintTop_toBottomOf="@id/linearLayout13" />
+                                <ImageView
+                                    android:layout_width="20dp"
+                                    android:layout_height="20dp"
+                                    android:layout_gravity="center_vertical"
+                                    android:layout_marginEnd="10dp"
+                                    android:src="@drawable/ic_icon_general_check"
+                                    android:visibility="gone" />
 
-        <LinearLayout
-            android:id="@+id/linearLayout14"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginHorizontal="20dp"
-            android:orientation="horizontal"
-            android:paddingVertical="20dp"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/view8">
+                        </LinearLayout>
+                </androidx.constraintlayout.widget.ConstraintLayout>
+        </androidx.cardview.widget.CardView>
 
-                <TextView
-                    android:id="@+id/textView14"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center_vertical"
-                    android:layout_marginStart="15dp"
-                    android:layout_weight="1"
-                    android:fontFamily="@font/montserrat_extra_bold"
-                    android:text="Звук"
-                    android:textColor="@color/white"
-                    android:textSize="22dp" />
-
-                <ImageView
-                    android:layout_width="20dp"
-                    android:layout_height="20dp"
-                    android:layout_gravity="center_vertical"
-                    android:layout_marginEnd="10dp"
-                    android:src="@drawable/ic_icon_general_check"
-                    android:visibility="gone" />
-
-        </LinearLayout>
-
-        <View
-            android:id="@+id/view9"
-            android:layout_width="match_parent"
-            android:layout_height="3dp"
-            android:background="#BC6E727C"
-            android:elevation="10dp"
-            android:layout_marginStart="70dp"
-            app:layout_constraintTop_toBottomOf="@id/linearLayout14" />
-
-        <LinearLayout
-            android:id="@+id/linearLayout15"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginHorizontal="20dp"
-            android:orientation="horizontal"
-            android:paddingVertical="20dp"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/view9">
-
-                <TextView
-                    android:id="@+id/textView15"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center_vertical"
-                    android:layout_marginStart="15dp"
-                    android:layout_weight="1"
-                    android:fontFamily="@font/montserrat_extra_bold"
-                    android:text="Звук"
-                    android:textColor="@color/white"
-                    android:textSize="22dp" />
-
-                <ImageView
-                    android:layout_width="20dp"
-                    android:layout_height="20dp"
-                    android:layout_gravity="center_vertical"
-                    android:layout_marginEnd="10dp"
-                    android:src="@drawable/ic_icon_general_check"
-                    android:visibility="gone" />
-        </LinearLayout>
-
-        <View
-            android:id="@+id/view10"
-            android:layout_width="match_parent"
-            android:layout_height="3dp"
-            android:background="#BC6E727C"
-            android:elevation="10dp"
-            android:layout_marginStart="70dp"
-            app:layout_constraintTop_toBottomOf="@id/linearLayout15" />
-
-        <LinearLayout
-            android:id="@+id/linearLayout16"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginHorizontal="20dp"
-            android:orientation="horizontal"
-            android:paddingVertical="20dp"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/view10">
-
-                <TextView
-                    android:id="@+id/textView16"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center_vertical"
-                    android:layout_marginStart="15dp"
-                    android:layout_weight="1"
-                    android:fontFamily="@font/montserrat_extra_bold"
-                    android:text="Звук"
-                    android:textColor="@color/white"
-                    android:textSize="22dp" />
-
-                <ImageView
-                    android:layout_width="20dp"
-                    android:layout_height="20dp"
-                    android:layout_gravity="center_vertical"
-                    android:layout_marginEnd="10dp"
-                    android:src="@drawable/ic_icon_general_check"
-                    android:visibility="gone" />
-        </LinearLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

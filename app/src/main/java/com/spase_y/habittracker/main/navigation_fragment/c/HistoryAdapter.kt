@@ -47,6 +47,7 @@ class HistoryAdapter(
 
     override fun onBindViewHolder(holder: HabitViewHolder, position: Int) {
         holder.bind(habits[position])
+
     }
 
     override fun getItemCount(): Int = habits.size

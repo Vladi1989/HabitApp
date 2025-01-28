@@ -81,6 +81,7 @@
                     android:textSize="20dp" />
 
                 <Switch
+                    android:id="@+id/swTotal"
                     android:layout_width="30dp"
                     android:layout_height="30dp"
                     android:checked="true"
@@ -113,6 +114,10 @@
                 android:layout_marginEnd="15dp"
                 android:text="Каждый день"
                 android:textSize="13dp"
+                android:ellipsize="end"
+                android:lines="1"
+                android:maxLines="1"
+                android:paddingHorizontal="4dp"
                 android:fontFamily="@font/montserrat_extra_bold"
                 android:textColor="@color/white"
                 android:background="@drawable/button_shape_graffit_light_r12"
@@ -152,6 +157,7 @@
                     android:textSize="20dp" />
 
                 <Switch
+                    android:id="@+id/swMorning"
                     android:layout_width="30dp"
                     android:layout_height="30dp"
                     android:trackTint="@drawable/switch_track_tint"
@@ -184,6 +190,10 @@
                 android:layout_marginEnd="15dp"
                 android:text="Каждый день"
                 android:textSize="13dp"
+                android:ellipsize="end"
+                android:lines="1"
+                android:maxLines="1"
+                android:paddingHorizontal="4dp"
                 android:fontFamily="@font/montserrat_extra_bold"
                 android:textColor="@color/white"
                 android:background="@drawable/button_shape_graffit_light_r12"
@@ -223,6 +233,7 @@
                     android:textSize="20dp" />
 
                 <Switch
+                    android:id="@+id/swAfternoon"
                     android:layout_width="30dp"
                     android:layout_height="30dp"
                     android:layout_marginTop="10dp"
@@ -255,6 +266,10 @@
                 android:layout_marginEnd="15dp"
                 android:text="Каждый день"
                 android:textSize="13dp"
+                android:ellipsize="end"
+                android:lines="1"
+                android:maxLines="1"
+                android:paddingHorizontal="4dp"
                 android:fontFamily="@font/montserrat_extra_bold"
                 android:textColor="@color/white"
                 android:background="@drawable/button_shape_graffit_light_r12"
@@ -294,6 +309,7 @@
                     android:textSize="20dp" />
 
                 <Switch
+                    android:id="@+id/swEvening"
                     android:layout_width="30dp"
                     android:layout_height="30dp"
                     android:layout_marginTop="10dp"
@@ -326,6 +342,10 @@
                 android:layout_marginEnd="15dp"
                 android:text="Каждый день"
                 android:textSize="13dp"
+                android:ellipsize="end"
+                android:lines="1"
+                android:maxLines="1"
+                android:paddingHorizontal="4dp"
                 android:fontFamily="@font/montserrat_extra_bold"
                 android:textColor="@color/white"
                 android:background="@drawable/button_shape_graffit_light_r12"
