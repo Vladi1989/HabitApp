@@ -144,7 +144,7 @@
 
                 <!-- Sunday -->
                 <androidx.appcompat.widget.AppCompatButton
-                    android:id="@+id/button_sunday"
+                    android:id="@+id/button_1"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="3dp"
@@ -157,7 +157,7 @@
 
                 <!-- Monday -->
                 <androidx.appcompat.widget.AppCompatButton
-                    android:id="@+id/button_monday"
+                    android:id="@+id/button_2"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="3dp"
@@ -171,7 +171,7 @@
 
                 <!-- Tuesday -->
                 <androidx.appcompat.widget.AppCompatButton
-                    android:id="@+id/button_tuesday"
+                    android:id="@+id/button_3"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="3dp"
@@ -184,7 +184,7 @@
 
                 <!-- Wednesday -->
                 <androidx.appcompat.widget.AppCompatButton
-                    android:id="@+id/button_wednesday"
+                    android:id="@+id/button_4"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="3dp"
@@ -197,7 +197,7 @@
 
                 <!-- Thursday -->
                 <androidx.appcompat.widget.AppCompatButton
-                    android:id="@+id/button_thursday"
+                    android:id="@+id/button_5"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="3dp"
@@ -210,7 +210,7 @@
 
                 <!-- Friday -->
                 <androidx.appcompat.widget.AppCompatButton
-                    android:id="@+id/button_friday"
+                    android:id="@+id/button_6"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="3dp"
@@ -272,7 +272,7 @@
                 android:fontFamily="@font/montserrat_extra_bold"
                 android:paddingTop="10dp"
                 android:paddingBottom="10dp"
-                android:text="X д. в неделю"
+                android:text="X д. в Месяц"
                 android:textColor="@color/text_default_light"
                 android:textSize="14dp"
                 app:layout_constraintStart_toStartOf="parent"
@@ -312,7 +312,7 @@
                 android:fontFamily="@font/montserrat_extra_bold"
                 android:paddingTop="10dp"
                 android:paddingBottom="10dp"
-                android:text="X д. в неделю"
+                android:text="X д. в месяц"
                 android:textColor="@color/text_default_light"
                 android:textSize="14dp"
                 app:layout_constraintStart_toStartOf="parent"
@@ -337,7 +337,7 @@
                 android:layout_weight="1"
                 android:paddingTop="10dp"
                 android:paddingBottom="10dp"
-                android:text="6 д.в неделю"
+                android:text="3 д. в месяц"
                 android:textColor="#9B9B9B"
                 android:textSize="14dp"
                 app:layout_constraintStart_toStartOf="parent"
@@ -386,7 +386,7 @@
                 android:fontFamily="@font/montserrat_extra_bold"
                 android:paddingTop="10dp"
                 android:paddingBottom="10dp"
-                android:text="X д. в неделю"
+                android:text="X д. в год"
                 android:textColor="@color/text_default_light"
                 android:textSize="14dp"
                 app:layout_constraintStart_toStartOf="parent"
@@ -427,7 +427,7 @@
                 android:fontFamily="@font/montserrat_extra_bold"
                 android:paddingTop="10dp"
                 android:paddingBottom="10dp"
-                android:text="X д. в неделю"
+                android:text="X д. в году"
                 android:textColor="@color/text_default_light"
                 android:textSize="14dp"
                 app:layout_constraintStart_toStartOf="parent"
@@ -452,7 +452,7 @@
                 android:layout_weight="1"
                 android:paddingTop="10dp"
                 android:paddingBottom="10dp"
-                android:text="6 д.в неделю"
+                android:text="3 д.в году"
                 android:textColor="#9B9B9B"
                 android:textSize="14dp"
                 app:layout_constraintStart_toStartOf="parent"
