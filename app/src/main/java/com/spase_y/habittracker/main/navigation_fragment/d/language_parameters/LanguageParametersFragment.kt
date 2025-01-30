@@ -24,6 +24,14 @@ class LanguageParametersFragment : Fragment() {
         binding.ivArrowBack1.setOnClickListener {
             requireActivity().onBackPressedDispatcher.onBackPressed()
         }
+        binding.linearLayout10.setOnClickListener {
+            binding.ivCheck1.visibility = View.VISIBLE
+            binding.ivCheck2.visibility = View.GONE
+        }
+        binding.linearLayout11.setOnClickListener {
+            binding.ivCheck1.visibility = View.GONE
+            binding.ivCheck2.visibility = View.VISIBLE
+        }
     }
 
     override fun onDestroyView() {

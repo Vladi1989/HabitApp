@@ -22,6 +22,7 @@ import com.spase_y.habittracker.databinding.FragmentHabitNameBinding
 import com.spase_y.habittracker.databinding.FragmentMainCHistoryBinding
 import com.spase_y.habittracker.main.navigation_fragment.a.MainFragmentAToday
 import com.spase_y.habittracker.main.navigation_fragment.a.create_new_habit.habit_name.habit_days.HabitDaysFragment
+import com.spase_y.habittracker.main.navigation_fragment.d.general_settings.MyBottomSheetPickerDayFragment
 
 class HabitNameFragment : Fragment() {
     private var _binding: FragmentHabitNameBinding? = null
@@ -45,6 +46,15 @@ class HabitNameFragment : Fragment() {
                 .replace(R.id.fcvMainApp,HabitDaysFragment())
                 .addToBackStack(null)
                 .commit()
+        }
+        binding.llnotification4.setOnClickListener {
+            val bottomSheet = MyBottomSheetPickerDayTargetFragment().apply {
+                setCallback { selectedDay ->
+                    // Обновляем текст на экране с выбранным днем недели
+                    binding.textView10.text = selectedDay
+                }
+            }
+            bottomSheet.show(parentFragmentManager, "MyBottomSheetDay")
         }
 
         // Кнопка назад
