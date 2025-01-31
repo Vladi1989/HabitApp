@@ -1,10 +1,13 @@
 package com.spase_y.habittracker.main.navigation_fragment.a.create_new_habit.habit_name
 
+import android.content.res.ColorStateList
 import android.os.Bundle
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.Button
+import android.widget.Toast
 import androidx.core.content.ContextCompat
 import androidx.navigation.fragment.findNavController
 import androidx.recyclerview.widget.GridLayoutManager
@@ -38,6 +41,31 @@ class HabitNameFragment : Fragment() {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
+
+        val button1 = binding.appCompatButton
+        val button2 = binding.appCompatButton2
+        val button3 = binding.appCompatButton3
+        val button4 = binding.appCompatButton4
+
+        val allButtons = listOf(button1, button2, button3, button4)
+
+        // Устанавливаем обработчик кликов для каждой кнопки
+
+        button1.setOnClickListener {
+            setActiveButton(button1, allButtons)
+        }
+
+        button2.setOnClickListener {
+            setActiveButton(button2, allButtons)
+        }
+
+        button3.setOnClickListener {
+            setActiveButton(button3, allButtons)
+        }
+
+        button4.setOnClickListener {
+            setActiveButton(button4, allButtons)
+        }
 
         val habitId = requireArguments().getInt("HabitType")
 
@@ -169,6 +197,25 @@ class HabitNameFragment : Fragment() {
 
         // Показать BottomSheet
         bottomSheetDialog.show()
+    }
+    private fun setActiveButton(activeButton: Button, allButtons: List<Button>) {
+        // Перебираем все кнопки
+        for (button in allButtons) {
+            if (button == activeButton) {
+                // Устанавливаем цвет activeButton на primary
+                button.backgroundTintList = ColorStateList.valueOf(
+                    resources.getColor(R.color.primary, null)
+                )
+
+                // Показываем тост
+                Toast.makeText(requireContext(), "Кнопка '${button.text}' активна!", Toast.LENGTH_SHORT).show()
+            } else {
+                // Остальным кнопкам ставим цвет card_view
+                button.backgroundTintList = ColorStateList.valueOf(
+                    resources.getColor(R.color.card_view, null)
+                )
+            }
+        }
     }
 
     override fun onDestroyView() {

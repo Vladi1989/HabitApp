@@ -25,6 +25,8 @@ class FeedbackFragment : Fragment() {
     }
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
+        requireActivity().findViewById<View>(R.id.llNavigation)?.visibility = View.GONE
+
 
         binding.ivArrowBack1.setOnClickListener {
             requireActivity().onBackPressedDispatcher.onBackPressed()

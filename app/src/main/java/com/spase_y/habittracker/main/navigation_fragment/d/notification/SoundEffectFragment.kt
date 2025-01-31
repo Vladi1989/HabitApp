@@ -24,10 +24,12 @@ class SoundEffectFragment : Fragment() {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
+        requireActivity().findViewById<View>(R.id.llNavigation)?.visibility = View.GONE
+
         binding.ivArrowBack1.setOnClickListener {
             requireActivity().onBackPressedDispatcher.onBackPressed()
         }
-        binding.linearLayout10.setOnClickListener {playSound(R.raw.sound_1)
+        binding.linearLayout10.setOnClickListener {playSound(R.raw.sound)
             binding.ivTrackOn1.visibility = View.VISIBLE
             binding.ivTrackOn2.visibility = View.GONE
             binding.ivTrackOn3.visibility = View.GONE

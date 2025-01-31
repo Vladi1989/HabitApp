@@ -28,6 +28,8 @@ class GeneralSettingsFragment : Fragment() {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
+        requireActivity().findViewById<View>(R.id.llNavigation)?.visibility = View.GONE
+
 
         // Обработка кнопки назад
         binding.ivArrowBack1.setOnClickListener {

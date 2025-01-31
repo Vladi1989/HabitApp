@@ -5,6 +5,7 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import com.spase_y.habittracker.R
 import com.spase_y.habittracker.databinding.FragmentLanguageParametersBinding
 
 class LanguageParametersFragment : Fragment() {
@@ -21,6 +22,8 @@ class LanguageParametersFragment : Fragment() {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
+        requireActivity().findViewById<View>(R.id.llNavigation)?.visibility = View.GONE
+
         binding.ivArrowBack1.setOnClickListener {
             requireActivity().onBackPressedDispatcher.onBackPressed()
         }

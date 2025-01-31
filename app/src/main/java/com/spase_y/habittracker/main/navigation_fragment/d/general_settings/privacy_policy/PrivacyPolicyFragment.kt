@@ -27,6 +27,8 @@ class PrivacyPolicyFragment : Fragment() {
         binding.ivArrowBack1.setOnClickListener {
             requireActivity().onBackPressedDispatcher.onBackPressed()
         }
+        requireActivity().findViewById<View>(R.id.llNavigation)?.visibility = View.GONE
+
     }
 
     override fun onDestroyView() {

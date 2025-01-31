@@ -29,6 +29,8 @@ class NotificationsFragment : Fragment() {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
+        requireActivity().findViewById<View>(R.id.llNavigation)?.visibility = View.GONE
+
 
 
         val totalTime = notificationsManager.getNotificationTime(NotificationsManager.Companion.NotificationVariants.TOTAL).time

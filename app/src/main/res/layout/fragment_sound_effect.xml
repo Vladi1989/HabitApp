@@ -101,7 +101,7 @@
                                     android:layout_marginStart="15dp"
                                     android:layout_weight="1"
                                     android:fontFamily="@font/montserrat_extra_bold"
-                                    android:text="Звук"
+                                    android:text="Звук №1"
                                     android:textColor="@color/white"
                                     android:textSize="22dp" />
 
@@ -144,7 +144,7 @@
                                     android:layout_marginStart="15dp"
                                     android:layout_weight="1"
                                     android:fontFamily="@font/montserrat_extra_bold"
-                                    android:text="Звук"
+                                    android:text="Звук №2"
                                     android:textColor="@color/white"
                                     android:textSize="22dp" />
 
@@ -187,7 +187,7 @@
                                     android:layout_marginStart="15dp"
                                     android:layout_weight="1"
                                     android:fontFamily="@font/montserrat_extra_bold"
-                                    android:text="Звук"
+                                    android:text="Звук №3"
                                     android:textColor="@color/white"
                                     android:textSize="22dp" />
 
@@ -229,7 +229,7 @@
                                     android:layout_marginStart="15dp"
                                     android:layout_weight="1"
                                     android:fontFamily="@font/montserrat_extra_bold"
-                                    android:text="Звук"
+                                    android:text="Звук №4"
                                     android:textColor="@color/white"
                                     android:textSize="22dp" />
 

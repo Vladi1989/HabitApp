@@ -339,7 +339,7 @@
                 android:layout_height="50dp"
                 android:layout_weight="1"
                 android:layout_marginEnd="8dp"
-                android:background="@drawable/button_shape_blue_light_r12"
+                android:background="@drawable/button_shape_r12_gray"
                 android:fontFamily="@font/montserrat_extra_bold"
                 android:text="Неважно"
                 android:textColor="@color/white" />
@@ -350,7 +350,7 @@
                 android:layout_height="50dp"
                 android:layout_weight="1"
                 android:layout_marginStart="8dp"
-                android:background="@drawable/button_shape_blue_light_r12"
+                android:background="@drawable/button_shape_r12_gray"
                 android:fontFamily="@font/montserrat_extra_bold"
                 android:text="Утром"
                 android:textColor="@color/white" />
@@ -377,7 +377,7 @@
                 android:layout_height="50dp"
                 android:layout_weight="1"
                 android:layout_marginEnd="8dp"
-                android:background="@drawable/button_shape_blue_light_r12"
+                android:background="@drawable/button_shape_r12_gray"
                 android:fontFamily="@font/montserrat_extra_bold"
                 android:text="Днем"
                 android:textColor="@color/white" />
@@ -388,7 +388,7 @@
                 android:layout_height="50dp"
                 android:layout_weight="1"
                 android:layout_marginStart="8dp"
-                android:background="@drawable/button_shape_blue_light_r12"
+                android:background="@drawable/button_shape_r12_gray"
                 android:fontFamily="@font/montserrat_extra_bold"
                 android:text="Вечером"
                 android:textColor="@color/white" />
@@ -582,7 +582,7 @@
                 <Switch
                     android:id="@+id/swTotal"
                     android:layout_width="40dp"
-                    android:layout_height="30dp"
+                    android:layout_height="40dp"
                     android:layout_weight="1"
                     android:checked="true"
                     android:layout_marginEnd="10dp"

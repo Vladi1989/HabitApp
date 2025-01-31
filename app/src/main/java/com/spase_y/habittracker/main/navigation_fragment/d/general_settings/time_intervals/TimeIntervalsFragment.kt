@@ -6,6 +6,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.TextView
+import com.spase_y.habittracker.R
 import com.spase_y.habittracker.databinding.FragmentTimeIntervalsBinding
 import com.spase_y.habittracker.main.navigation_fragment.d.notification.MyBottomSheetTimeFragment
 
@@ -26,6 +27,8 @@ class TimeIntervalsFragment : Fragment() {
         binding.ivArrowBack1.setOnClickListener {
             requireActivity().onBackPressedDispatcher.onBackPressed()
         }
+        requireActivity().findViewById<View>(R.id.llNavigation)?.visibility = View.GONE
+
 
         setupButton(binding.textView9, 8, 14)  // Утро
         setupButton(binding.textView13, 14, 19) // День
