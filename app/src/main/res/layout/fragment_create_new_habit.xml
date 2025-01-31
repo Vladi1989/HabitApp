@@ -140,7 +140,7 @@
                     android:layout_marginBottom="10dp"
                     android:fontFamily="@font/montserrat_extra_bold"
                     android:gravity="center_horizontal"
-                    android:text="Одноразовая"
+                    android:text="@string/disposable"
                     android:textColor="@color/white"
                     android:textSize="14dp"
                     app:layout_constraintBottom_toBottomOf="parent"
@@ -206,7 +206,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:fontFamily="@font/montserrat_extra_bold"
-            android:text="Вредная"
+            android:text="@string/vred"
             android:textColor="@color/text_default_light"
             android:textSize="20dp"
             app:layout_constraintStart_toStartOf="parent"
@@ -215,7 +215,7 @@
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Каждый день по умолчанию выполнено. Но если вы сорвались, снимите отметку о выполнении."
+            android:text="@string/every_day_is_done_by_default"
             android:textColor="#88FFFFFF" />
     </LinearLayout>
 
@@ -239,7 +239,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:fontFamily="@font/montserrat_extra_bold"
-            android:text="Одноразовая"
+            android:text="@string/disposable"
             android:textColor="@color/text_default_light"
             android:textSize="20dp"
             app:layout_constraintStart_toStartOf="parent"
@@ -248,7 +248,7 @@
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Напомнит вам о важном разовом событии в выбранную дату."
+            android:text="@string/It_will_remind_you_of_important_things"
             android:textColor="#88FFFFFF" />
     </LinearLayout>
 
@@ -275,7 +275,7 @@
         android:layout_marginHorizontal="20dp"
         android:layout_marginTop="15dp"
         android:gravity="center_horizontal"
-        android:text="ИЛИ ВЫБЕРИТЕ ИЗ УЖЕ ГОТОВЫХ"
+        android:text="@string/or_choose_from_the_teady_made_ones"
         android:textColor="#88FFFFFF"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
@@ -381,7 +381,7 @@
             android:layout_marginStart="30dp"
             android:layout_marginBottom="1dp"
             android:fontFamily="@font/montserrat_extra_bold"
-            android:text="Важные привычки"
+            android:text="@string/important_habits"
             android:textColor="@color/text_default_light"
             android:textSize="18dp"
             app:layout_constraintBottom_toTopOf="@+id/view33"
@@ -404,7 +404,7 @@
             android:layout_height="wrap_content"
             android:layout_marginStart="30dp"
             android:layout_marginTop="1dp"
-            android:text="Освежите свою жизнь\nпростыми действиями"
+            android:text="@string/refresh_your_life"
             android:textColor="#88FFFFFF"
             android:textSize="16dp"
             app:layout_constraintStart_toEndOf="@+id/imageView55"

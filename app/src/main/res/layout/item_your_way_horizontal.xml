@@ -32,7 +32,7 @@
             android:shadowDx="3"
             android:shadowDy="4"
             android:shadowRadius="15"
-            android:text="МЕНЬШЕ ТЕЛЕФОНА\n- БОЛЬШЕ СДЕЛАНО"
+            android:text="@string/min_phone"
             android:textSize="20sp"
             android:textColor="@color/text_default_light" />
 

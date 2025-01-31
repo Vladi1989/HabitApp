@@ -40,7 +40,7 @@
                     android:fontFamily="@font/montserrat_extra_bold"
                     android:maxEms="15"
                     android:maxLines="1"
-                    android:text="Мои достижения"
+                    android:text="@string/my_achievements"
                     android:textColor="@color/text_default_light"
                     android:textSize="17sp"
                     app:layout_constraintStart_toStartOf="parent"
@@ -55,7 +55,7 @@
                     android:ellipsize="end"
                     android:maxEms="15"
                     android:maxLines="1"
-                    android:text="У вас пока нет достижений."
+                    android:text="@string/you_dont_have_any_achievements_yet"
                     android:textColor="@color/text_default_light"
                     android:textSize="14sp"
                     app:layout_constraintStart_toStartOf="@+id/textView"
@@ -82,7 +82,7 @@
             android:fontFamily="@font/montserrat_extra_bold"
             android:maxEms="15"
             android:maxLines="1"
-            android:text="Завершенные привычки"
+            android:text="@string/completed_habits"
             android:textColor="@color/text_default_light"
             android:textSize="17sp"
             app:layout_constraintStart_toStartOf="parent"
@@ -98,7 +98,7 @@
             android:maxEms="15"
             android:layout_marginTop="5dp"
             android:maxLines="1"
-            android:text="0/6 Архив"
+            android:text="@string/arhiv"
             android:textColor="@color/text_default_light"
             android:textSize="17sp"
             app:layout_constraintStart_toStartOf="parent"
@@ -152,7 +152,7 @@
                 android:layout_weight="1"
                 android:fontFamily="@font/montserrat_extra_bold"
                 android:gravity="center_horizontal"
-                android:text="Завершить\nривычку в\nпервый раз"
+                android:text="@string/End_Habit"
                 android:textColor="@color/white"
                 android:textSize="12dp" />
 
@@ -162,7 +162,7 @@
                 android:layout_weight="1"
                 android:fontFamily="@font/montserrat_extra_bold"
                 android:gravity="center_horizontal"
-                android:text="Завершить\nпривычку\n10 раз"
+                android:text="@string/End_Habit_10"
                 android:textColor="@color/white"
                 android:textSize="12dp" />
 
@@ -172,7 +172,7 @@
                 android:layout_weight="1"
                 android:fontFamily="@font/montserrat_extra_bold"
                 android:gravity="center_horizontal"
-                android:text="Завершить\nпривычку\n20 раз"
+                android:text="@string/End_Habit_20"
                 android:textColor="@color/white"
                 android:textSize="12dp" />
 
@@ -226,7 +226,7 @@
                 android:layout_weight="1"
                 android:fontFamily="@font/montserrat_extra_bold"
                 android:gravity="center_horizontal"
-                android:text="Завершить\nривычку в\n50 раз"
+                android:text="@string/End_Habit_50"
                 android:textColor="@color/white"
                 android:textSize="12dp" />
 
@@ -236,7 +236,7 @@
                 android:layout_weight="1"
                 android:fontFamily="@font/montserrat_extra_bold"
                 android:gravity="center_horizontal"
-                android:text="Завершить\nпривычку\n100 раз"
+                android:text="@string/End_Habit_100"
                 android:textColor="@color/white"
                 android:textSize="12dp" />
 
@@ -246,7 +246,7 @@
                 android:layout_weight="1"
                 android:fontFamily="@font/montserrat_extra_bold"
                 android:gravity="center_horizontal"
-                android:text="Завершить\nпривычку\n300 раз"
+                android:text="@string/End_Habit_300"
                 android:textColor="@color/white"
                 android:textSize="12dp" />
 

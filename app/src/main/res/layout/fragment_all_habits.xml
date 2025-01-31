@@ -10,7 +10,7 @@
         android:id="@+id/imageView12"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="АКТИВНЫЕ"
+        android:text="@string/active"
         android:textSize="17dp"
         android:layout_marginStart="10dp"
         android:fontFamily="@font/montserrat_extra_bold"

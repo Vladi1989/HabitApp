@@ -15,7 +15,7 @@
         android:layout_marginTop="10dp"
         android:fontFamily="@font/montserrat_extra_bold"
         android:gravity="center"
-        android:text="История"
+        android:text="@string/history"
         android:textSize="30dp"
         android:textColor="@color/text_default_light"
         app:layout_constraintTop_toTopOf="parent"

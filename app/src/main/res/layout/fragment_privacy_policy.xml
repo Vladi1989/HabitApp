@@ -33,7 +33,7 @@
             android:fontFamily="@font/montserrat_extra_bold"
             android:gravity="center"
             android:paddingBottom="10dp"
-            android:text="Политика\nконфидициальности"
+            android:text="@string/confidentiality_policy"
             android:textColor="@color/text_default_light"
             android:textSize="23dp" />
 
@@ -47,7 +47,7 @@
         android:gravity="center"
         android:layout_marginTop="10dp"
         android:paddingBottom="10dp"
-        android:text="Privacy Policy"
+        android:text="@string/privacy_policy_"
         android:textColor="@color/black"
         android:textSize="23dp"
         app:layout_constraintEnd_toEndOf="parent"
@@ -61,7 +61,7 @@
         android:layout_marginHorizontal="15dp"
         android:layout_marginTop="20dp"
         android:paddingBottom="10dp"
-        android:text="Privacy Policy (политика конфиденциальности) — это документ, в котором декларируется IT-продукт — приложение или сайт. Его цель — информировать пользователя о том, как компания использует его данные."
+        android:text="@string/privacy_policy_it"
         android:textColor="@color/black"
         android:textSize="12dp"
         app:layout_constraintEnd_toEndOf="parent"

@@ -54,7 +54,7 @@
                 android:layout_gravity="center_vertical"
                 android:layout_marginStart="15dp"
                 android:fontFamily="@font/montserrat_extra_bold"
-                android:text="Уведомления"
+                android:text="@string/notification_"
                 android:textColor="@color/white"
                 android:textSize="20dp" />
 
@@ -91,7 +91,7 @@
                 android:layout_gravity="center_vertical"
                 android:layout_marginStart="15dp"
                 android:fontFamily="@font/montserrat_extra_bold"
-                android:text="Общие настройки"
+                android:text="@string/general_settings"
                 android:textColor="@color/white"
                 android:textSize="20dp" />
 
@@ -128,7 +128,7 @@
                 android:layout_gravity="center_vertical"
                 android:layout_marginStart="15dp"
                 android:fontFamily="@font/montserrat_extra_bold"
-                android:text="Языковые параметры"
+                android:text="@string/language_parameters"
                 android:textColor="@color/white"
                 android:textSize="20dp" />
 

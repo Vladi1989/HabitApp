@@ -12,7 +12,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:fontFamily="@font/montserrat_extra_bold"
-        android:text="Удалить все данные?"
+        android:text="@string/delete_all_the_data"
         android:textSize="18sp"
         android:textColor="@color/white"
         android:gravity="center"
@@ -22,7 +22,7 @@
         android:id="@+id/messageTextView"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Вы уверены, что хотите сбросить настройки приложения и удалить все данные?"
+        android:text="@string/are_you_sure_you_want_to_reset"
         android:textSize="16sp"
         android:textColor="#8A8A8A"
         android:gravity="center"
@@ -41,7 +41,7 @@
             android:textColor="@color/white"
             android:background="@drawable/button_shape_blue_light_r12"
             android:layout_height="wrap_content"
-            android:text="Отмена" />
+            android:text="@string/cancel" />
 
         <androidx.appcompat.widget.AppCompatButton
             android:id="@+id/negativeButton"
@@ -50,7 +50,7 @@
             android:elevation="1dp"
             android:textColor="@color/white"
             android:background="@drawable/button_shape_blue_light_r12"
-            android:text="Ок"
+            android:text="@string/ok"
             android:layout_marginStart="16dp" />
 
     </LinearLayout>

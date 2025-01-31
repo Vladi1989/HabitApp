@@ -24,7 +24,7 @@
         android:layout_marginStart="40dp"
         android:fontFamily="@font/montserrat_extra_bold"
         android:gravity="center"
-        android:text="Общие настройки"
+        android:text="@string/general_settings"
         android:textColor="@color/text_default_light"
         android:textSize="25dp"
         app:layout_constraintBottom_toBottomOf="@+id/ivArrowBack1"
@@ -60,7 +60,7 @@
                 android:layout_weight="1"
                 android:layout_marginStart="15dp"
                 android:fontFamily="@font/montserrat_extra_bold"
-                android:text="Интервалы времени"
+                android:text="@string/time_intervals"
                 android:textColor="@color/text_default_light"
                 android:textSize="18dp" />
 
@@ -102,7 +102,7 @@
                 android:layout_weight="1"
                 android:layout_marginStart="15dp"
                 android:fontFamily="@font/montserrat_extra_bold"
-                android:text="Первый день\nнедели"
+                android:text="@string/first_day_of_week"
                 android:textColor="@color/text_default_light"
                 android:textSize="18dp" />
 
@@ -114,7 +114,7 @@
                 android:layout_weight="1"
                 android:layout_marginStart="15dp"
                 android:fontFamily="@font/montserrat_extra_bold"
-                android:text="Воскресенье"
+                android:text="@string/sunday"
                 android:textColor="#8EB8B3B3"
                 android:textSize="12dp" />
 
@@ -162,7 +162,7 @@
                 android:layout_weight="1"
                 android:layout_marginStart="15dp"
                 android:fontFamily="@font/montserrat_extra_bold"
-                android:text="Политика\nконфидициальности"
+                android:text="@string/confidentiality_policy"
                 android:textColor="@color/text_default_light"
                 android:textSize="18dp" />
 
@@ -205,7 +205,7 @@
                 android:layout_weight="1"
                 android:layout_marginStart="15dp"
                 android:fontFamily="@font/montserrat_extra_bold"
-                android:text="Удалить все данные"
+                android:text="@string/delete_all_data"
                 android:textColor="#B92F4A"
                 android:textSize="18dp" />
 

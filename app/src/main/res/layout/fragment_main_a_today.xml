@@ -31,7 +31,7 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="4 янв"
+        android:text="@string/jan_4"
         android:textColor="#CCD3D2D2"
         android:textSize="16sp"
         app:layout_constraintStart_toStartOf="@+id/textView"
@@ -81,7 +81,7 @@
                 android:layout_height="50dp"
                 android:layout_marginStart="15dp"
                 android:backgroundTint="@color/primary"
-                android:text="Все"
+                android:text="@string/all"
                 android:textSize="16sp" />
 
             <Button
@@ -90,7 +90,7 @@
                 android:layout_height="50dp"
                 android:layout_marginStart="15dp"
                 android:backgroundTint="@color/card_view"
-                android:text="Утром"
+                android:text="@string/in_the_morning"
                 android:textSize="16sp" />
 
             <Button
@@ -99,7 +99,7 @@
                 android:layout_height="50dp"
                 android:layout_marginStart="15dp"
                 android:backgroundTint="@color/card_view"
-                android:text="Днем"
+                android:text="@string/in_the_afternoon"
                 android:textSize="16sp" />
 
             <Button
@@ -109,7 +109,7 @@
                 android:layout_marginStart="15dp"
                 android:layout_marginEnd="15dp"
                 android:backgroundTint="@color/card_view"
-                android:text="Вечером"
+                android:text="@string/in_the_evening"
                 android:textSize="16sp" />
 
         </LinearLayout>
@@ -159,7 +159,7 @@
         android:layout_width="150dp"
         android:layout_height="50dp"
         android:backgroundTint="@color/primary"
-        android:text="Сегодня"
+        android:text="@string/today"
         android:drawableLeft="@drawable/arrow_back"
         android:drawableTint="@color/white"
         android:textSize="18sp"

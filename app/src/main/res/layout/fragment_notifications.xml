@@ -28,7 +28,7 @@
             android:layout_marginTop="8dp"
             android:fontFamily="@font/montserrat_extra_bold"
             android:gravity="center"
-            android:text="Уведомления"
+            android:text="@string/notification_"
             android:layout_marginStart="40dp"
             android:textColor="@color/text_default_light"
             android:textSize="30dp"
@@ -42,7 +42,7 @@
             android:layout_marginStart="12dp"
             android:fontFamily="@font/montserrat_extra_bold"
             android:gravity="center"
-            android:text="Не приходят?"
+            android:text="@string/they_dont_come"
             android:textColor="#1D4DDD"
             android:textSize="15dp"
             app:layout_constraintStart_toStartOf="parent"
@@ -76,7 +76,7 @@
                     android:layout_marginTop="10dp"
                     android:fontFamily="@font/montserrat_extra_bold"
                     android:paddingTop="10dp"
-                    android:text="Общие напоминания"
+                    android:text="@string/general_notification"
                     android:textColor="@color/text_default_light"
                     android:textSize="20dp" />
 
@@ -112,7 +112,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="25dp"
                 android:layout_marginEnd="15dp"
-                android:text="Каждый день"
+                android:text="@string/every_day"
                 android:textSize="13dp"
                 android:ellipsize="end"
                 android:lines="1"
@@ -152,7 +152,7 @@
                     android:layout_marginTop="10dp"
                     android:fontFamily="@font/montserrat_extra_bold"
                     android:paddingTop="10dp"
-                    android:text="Утренние привычки"
+                    android:text="@string/morning_habit"
                     android:textColor="@color/text_default_light"
                     android:textSize="20dp" />
 
@@ -188,7 +188,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="25dp"
                 android:layout_marginEnd="15dp"
-                android:text="Каждый день"
+                android:text="@string/every_day"
                 android:textSize="13dp"
                 android:ellipsize="end"
                 android:lines="1"
@@ -228,7 +228,7 @@
                     android:layout_marginTop="10dp"
                     android:fontFamily="@font/montserrat_extra_bold"
                     android:paddingTop="10dp"
-                    android:text="Дневные привычки"
+                    android:text="@string/afternoon_habit"
                     android:textColor="@color/text_default_light"
                     android:textSize="20dp" />
 
@@ -264,7 +264,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="25dp"
                 android:layout_marginEnd="15dp"
-                android:text="Каждый день"
+                android:text="@string/every_day"
                 android:textSize="13dp"
                 android:ellipsize="end"
                 android:lines="1"
@@ -304,7 +304,7 @@
                     android:layout_marginTop="10dp"
                     android:fontFamily="@font/montserrat_extra_bold"
                     android:paddingTop="10dp"
-                    android:text="Вечерние привычки"
+                    android:text="@string/evening_habit"
                     android:textColor="@color/text_default_light"
                     android:textSize="20dp" />
 
@@ -375,7 +375,7 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="3"
                 android:fontFamily="@font/montserrat_extra_bold"
-                android:text="Звуковые эффекты"
+                android:text="@string/sound_effects"
                 android:textColor="@color/text_default_light"
                 android:textSize="12sp"
                 android:gravity="center_vertical" />
@@ -388,7 +388,7 @@
                 android:textSize="12sp"
                 android:layout_marginStart="10dp"
                 android:gravity="center_vertical"
-                android:text="система по умолчанию"
+                android:text="@string/system"
                 android:paddingStart="5dp" />
 
 

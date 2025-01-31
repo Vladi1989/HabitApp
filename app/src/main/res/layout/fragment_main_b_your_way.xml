@@ -16,7 +16,7 @@
         android:layout_marginTop="10dp"
         android:fontFamily="@font/montserrat_extra_bold"
         android:gravity="center"
-        android:text="Ваш путь"
+        android:text="@string/your_way"
         android:textSize="30dp"
         android:textColor="@color/text_default_light"
         app:layout_constraintTop_toTopOf="parent"
@@ -48,7 +48,7 @@
                 android:layout_marginTop="15dp"
                 android:fontFamily="@font/montserrat_extra_bold"
                 android:gravity="center"
-                android:text="Рекомендовано для вас"
+                android:text="@string/recommend_for_you"
                 android:textColor="@color/text_default_light"
                 android:textSize="15dp" />
 
@@ -71,7 +71,7 @@
                 android:layout_marginTop="10dp"
                 android:fontFamily="@font/montserrat_extra_bold"
                 android:gravity="center"
-                android:text="Все пути"
+                android:text="@string/all_way"
                 android:textColor="@color/text_default_light"
                 android:textSize="30dp" />
 

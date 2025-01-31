@@ -17,7 +17,7 @@
             android:id="@+id/dayOfWeek1"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Пн"
+            android:text="@string/monday_1"
             android:textSize="15dp"
             android:textColor="#888C90" />
 
@@ -51,7 +51,7 @@
             android:id="@+id/dayOfWeek2"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Вт"
+            android:text="@string/tuesday_1"
             android:textSize="15dp"
             android:textColor="#888C90" />
 
@@ -83,7 +83,7 @@
             android:id="@+id/dayOfWeek3"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Ср"
+            android:text="@string/wednesday_1"
             android:textSize="15dp"
             android:textColor="#888C90" />
 
@@ -115,7 +115,7 @@
             android:id="@+id/dayOfWeek4"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Чт"
+            android:text="@string/thursday_1"
             android:textSize="15dp"
             android:textColor="#888C90" />
 
@@ -147,7 +147,7 @@
             android:id="@+id/dayOfWeek5"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Пт"
+            android:text="@string/friday_1"
             android:textSize="15dp"
             android:textColor="#888C90" />
 
@@ -179,7 +179,7 @@
             android:id="@+id/dayOfWeek6"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Сб"
+            android:text="@string/saturday_1"
             android:textSize="15dp"
             android:textColor="#888C90" />
 
@@ -211,7 +211,7 @@
             android:id="@+id/dayOfWeek7"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Вс"
+            android:text="@string/sunday_1"
             android:textSize="15dp"
             android:textColor="#888C90"/>
 

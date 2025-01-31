@@ -54,7 +54,7 @@
                 android:ellipsize="end"
                 android:maxEms="15"
                 android:maxLines="1"
-                android:text="Каждый день"
+                android:text="@string/every_day"
                 android:textColor="@color/text_default_light"
                 android:textSize="14sp"
                 app:layout_constraintStart_toStartOf="@+id/textView"

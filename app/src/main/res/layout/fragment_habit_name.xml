@@ -31,7 +31,7 @@
             android:gravity="center"
             android:layout_marginStart="20dp"
             android:textColorHint="@color/white"
-            android:hint="Общие настройки"
+            android:hint="@string/general_settings"
             android:textColor="@color/text_default_light"
             android:textSize="25dp"
             app:layout_constraintStart_toStartOf="parent"
@@ -56,7 +56,7 @@
             android:layout_marginTop="12dp"
             android:layout_marginStart="20dp"
             android:gravity="center"
-            android:text="Регулярная привычка"
+            android:text="@string/regular_habit"
             android:textColor="#9A9797"
             android:textSize="15dp"
             app:layout_constraintStart_toStartOf="parent"
@@ -96,7 +96,7 @@
                     android:padding="15dp"
                     android:fontFamily="@font/montserrat_extra_bold"
                     android:gravity="center"
-                    android:text="Значок"
+                    android:text="@string/icon"
                     android:textColor="@color/text_default_light"
                     android:textSize="20dp"
                     app:layout_constraintEnd_toEndOf="parent"
@@ -135,7 +135,7 @@
                     android:fontFamily="@font/montserrat_extra_bold"
                     android:gravity="center"
                     android:paddingBottom="15dp"
-                    android:text="Цвет"
+                    android:text="@string/color"
                     android:textColor="@color/text_default_light"
                     android:textSize="20dp"
                     app:layout_constraintEnd_toEndOf="parent"
@@ -176,7 +176,7 @@
             android:layout_marginStart="20dp"
             android:gravity="center"
             android:layout_marginTop="10dp"
-            android:text="Повторение"
+            android:text="@string/repeat"
             android:paddingBottom="15dp"
             android:fontFamily="@font/montserrat_extra_bold"
             android:textColor="#9A9797"
@@ -205,7 +205,7 @@
                 android:layout_weight="1"
                 android:paddingBottom="15dp"
                 android:fontFamily="@font/montserrat_extra_bold"
-                android:text="Дни привычек"
+                android:text="@string/habit_days"
                 android:textColor="@color/text_default_light"
                 android:textSize="18dp" />
             <TextView
@@ -217,7 +217,7 @@
                 android:layout_weight="1"
                 android:paddingBottom="15dp"
                 android:textColor="#9A9797"
-                android:text="Каждый день"
+                android:text="@string/every_day"
                 android:textSize="16dp" />
             <ImageView
                 android:id="@+id/ivArrowForward3"
@@ -256,7 +256,7 @@
                 android:layout_weight="1"
                 android:fontFamily="@font/montserrat_extra_bold"
                 android:paddingBottom="15dp"
-                android:text="Цель"
+                android:text="@string/target"
                 android:textColor="@color/text_default_light"
                 android:textSize="18dp" />
 
@@ -268,7 +268,7 @@
                 android:layout_marginTop="5dp"
                 android:layout_marginEnd="10dp"
                 android:paddingBottom="15dp"
-                android:text="Выкл"
+                android:text="@string/off"
                 android:textColor="#9A9797"
                 android:textSize="16dp" />
 
@@ -297,7 +297,7 @@
             android:gravity="center"
             android:layout_marginTop="10dp"
             android:paddingBottom="15dp"
-            android:text="Выполнить..."
+            android:text="@string/perform"
             android:textColor="#9A9797"
             android:textSize="18dp"
             android:visibility="visible"
@@ -341,7 +341,7 @@
                 android:layout_marginEnd="8dp"
                 android:background="@drawable/button_shape_r12_gray"
                 android:fontFamily="@font/montserrat_extra_bold"
-                android:text="Неважно"
+                android:text="@string/no_matter"
                 android:textColor="@color/white" />
 
             <androidx.appcompat.widget.AppCompatButton
@@ -352,7 +352,7 @@
                 android:layout_marginStart="8dp"
                 android:background="@drawable/button_shape_r12_gray"
                 android:fontFamily="@font/montserrat_extra_bold"
-                android:text="Утром"
+                android:text="@string/In_the_morning"
                 android:textColor="@color/white" />
         </LinearLayout>
 
@@ -379,7 +379,7 @@
                 android:layout_marginEnd="8dp"
                 android:background="@drawable/button_shape_r12_gray"
                 android:fontFamily="@font/montserrat_extra_bold"
-                android:text="Днем"
+                android:text="@string/In_the_afternoon"
                 android:textColor="@color/white" />
 
             <androidx.appcompat.widget.AppCompatButton
@@ -390,7 +390,7 @@
                 android:layout_marginStart="8dp"
                 android:background="@drawable/button_shape_r12_gray"
                 android:fontFamily="@font/montserrat_extra_bold"
-                android:text="Вечером"
+                android:text="@string/it_the_evening"
                 android:textColor="@color/white" />
         </LinearLayout>
 
@@ -403,7 +403,7 @@
             android:fontFamily="@font/montserrat_extra_bold"
             android:gravity="center"
             android:paddingBottom="15dp"
-            android:text="Цель на день"
+            android:text="@string/target_on_day"
             android:textColor="#9A9797"
             android:textSize="18dp"
             android:visibility="visible"
@@ -431,7 +431,7 @@
                 android:layout_weight="1"
                 android:paddingBottom="15dp"
                 android:fontFamily="@font/montserrat_extra_bold"
-                android:text="Цель"
+                android:text="@string/target"
                 android:textColor="@color/text_default_light"
                 android:textSize="18dp" />
 
@@ -443,7 +443,7 @@
                 android:layout_marginTop="5dp"
                 android:layout_weight="1"
                 android:paddingBottom="15dp"
-                android:text="Выкл"
+                android:text="@string/off"
                 android:textColor="#9A9797"
                 android:textSize="16dp" />
 
@@ -481,7 +481,7 @@
                 android:layout_weight="1"
                 android:layout_marginTop="10dp"
                 android:fontFamily="@font/montserrat_extra_bold"
-                android:text="Расширенные настройки"
+                android:text="@string/advanced_settings"
                 android:textColor="@color/white"
                 android:textSize="18dp" />
 
@@ -517,7 +517,7 @@
                 android:layout_weight="1"
                 android:layout_marginTop="10dp"
                 android:fontFamily="@font/montserrat_extra_bold"
-                android:text="Расширенные настройки"
+                android:text="@string/advanced_settings"
                 android:textColor="@color/white"
                 android:textSize="18dp" />
 
@@ -543,7 +543,7 @@
             android:gravity="center"
             android:paddingBottom="15dp"
             android:layout_marginTop="10dp"
-            android:text="Напоминание"
+            android:text="@string/notification"
             android:textColor="#9A9797"
             android:textSize="18dp"
             android:visibility="visible"
@@ -573,7 +573,7 @@
                     android:layout_marginTop="10dp"
                     android:layout_weight="1"
                     android:fontFamily="@font/montserrat_extra_bold"
-                    android:text="Напоминание для этой\nпривычки"
+                    android:text="@string/notification_for_this"
                     android:textColor="@color/white"
                     android:textSize="18dp"
                     app:layout_constraintStart_toStartOf="parent"
@@ -623,7 +623,7 @@
             android:fontFamily="@font/montserrat_extra_bold"
             android:gravity="center"
             android:paddingBottom="15dp"
-            android:text="Окончание"
+            android:text="@string/finish"
             android:textColor="#9A9797"
             android:layout_marginTop="10dp"
             android:layout_marginStart="20dp"
@@ -639,7 +639,7 @@
             android:layout_weight="1"
             android:background="@drawable/button_shape_r12_gray"
             android:fontFamily="@font/montserrat_extra_bold"
-            android:text="Выкл"
+            android:text="@string/off"
             android:textColor="@color/white"
             app:layout_constraintStart_toStartOf="@+id/cv2"
             app:layout_constraintTop_toBottomOf="@+id/textView27" />
@@ -651,7 +651,7 @@
             android:layout_weight="1"
             android:background="@drawable/button_shape_r12_gray"
             android:fontFamily="@font/montserrat_extra_bold"
-            android:text="Дата"
+            android:text="@string/data"
             android:textColor="@color/white"
             app:layout_constraintEnd_toEndOf="@+id/cv2"
             app:layout_constraintTop_toBottomOf="@+id/textView27" />
@@ -680,7 +680,7 @@
                 android:paddingTop="13dp"
                 android:layout_marginStart="15dp"
                 android:paddingBottom="10dp"
-                android:text="X д. в неделю"
+                android:text="@string/x_d_in_the_week"
                 android:textColor="@color/text_default_light"
                 android:textSize="14dp"
                 app:layout_constraintStart_toStartOf="parent"
@@ -729,7 +729,7 @@
             android:layout_height="58dp"
             android:layout_marginHorizontal="15dp"
             android:background="@drawable/button_shape_r12"
-            android:text="Сохранить"
+            android:text="@string/save"
             android:textAllCaps="false"
             android:textColor="@color/white"
             android:textSize="22sp"
