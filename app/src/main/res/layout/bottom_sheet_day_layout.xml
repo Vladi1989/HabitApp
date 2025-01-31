@@ -43,7 +43,7 @@
             android:layout_marginStart="3dp"
             android:layout_marginEnd="3dp"
             android:background="@drawable/button_shape_graffit_light_r12"
-            android:text="S"
+            android:text="@string/sunday_1"
             android:textSize="18sp"
             android:textColor="@android:color/white" />
 
@@ -56,7 +56,7 @@
             android:layout_marginStart="3dp"
             android:layout_marginEnd="3dp"
             android:background="@drawable/button_shape_graffit_light_r12"
-            android:text="M"
+            android:text="@string/monday_1"
             android:textSize="18sp"
             android:textColor="@android:color/white" />
 
@@ -70,7 +70,7 @@
             android:layout_marginEnd="3dp"
             android:background="@drawable/button_shape_graffit_light_r12"
 
-            android:text="T"
+            android:text="@string/tuesday_1"
             android:textSize="18sp"
             android:textColor="@android:color/white" />
 
@@ -84,7 +84,7 @@
             android:layout_marginEnd="3dp"
             android:background="@drawable/button_shape_graffit_light_r12"
 
-            android:text="W"
+            android:text="@string/wednesday_1"
             android:textSize="18sp"
             android:textColor="@android:color/white" />
 
@@ -98,7 +98,7 @@
             android:layout_marginEnd="3dp"
             android:background="@drawable/button_shape_graffit_light_r12"
 
-            android:text="T"
+            android:text="@string/thursday_1"
             android:textSize="18sp"
             android:textColor="@android:color/white" />
 
@@ -112,7 +112,7 @@
             android:layout_marginEnd="3dp"
             android:background="@drawable/button_shape_graffit_light_r12"
 
-            android:text="F"
+            android:text="@string/friday_1"
             android:textSize="18sp"
             android:textColor="@android:color/white" />
 
@@ -126,7 +126,7 @@
             android:layout_marginEnd="3dp"
             android:background="@drawable/button_shape_graffit_light_r12"
 
-            android:text="S"
+            android:text="@string/saturday_1"
             android:textSize="18sp"
             android:textColor="@android:color/white" />
     </LinearLayout>
