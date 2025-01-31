@@ -49,6 +49,18 @@ class HabitNameFragment : Fragment() {
 
         val allButtons = listOf(button1, button2, button3, button4)
 
+        val buttonOff = binding.appCompatButton9
+        val buttonData = binding.appCompatButton10
+
+        val finishButtons = listOf(buttonOff,buttonData)
+
+        buttonOff.setOnClickListener {
+            setActiveButton(buttonOff,finishButtons)
+        }
+        buttonData.setOnClickListener {
+            setActiveButton(buttonData,finishButtons)
+        }
+
         // Устанавливаем обработчик кликов для каждой кнопки
 
         button1.setOnClickListener {
