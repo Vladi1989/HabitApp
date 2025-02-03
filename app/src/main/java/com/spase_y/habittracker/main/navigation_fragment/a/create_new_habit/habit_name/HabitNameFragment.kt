@@ -42,6 +42,27 @@ class HabitNameFragment : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
+        binding.llSettings.setOnClickListener {
+            // Проверяем текущую видимость элементов
+            if (binding.textView25.visibility == View.VISIBLE) {
+                // Если элементы уже видимы, скрываем их
+                binding.textView25.visibility = View.GONE
+                binding.cv2.visibility = View.GONE
+                binding.appCompatButton9.visibility = View.GONE
+                binding.appCompatButton10.visibility = View.GONE
+                binding.llDaysInWeek.visibility = View.GONE
+                binding.textView27.visibility = View.GONE
+            } else {
+                // Если элементы скрыты, показываем их
+                binding.textView25.visibility = View.VISIBLE
+                binding.cv2.visibility = View.VISIBLE
+                binding.appCompatButton9.visibility = View.VISIBLE
+                binding.appCompatButton10.visibility = View.VISIBLE
+                binding.llDaysInWeek.visibility = View.VISIBLE
+                binding.textView27.visibility = View.VISIBLE
+            }
+        }
+
         val button1 = binding.appCompatButton
         val button2 = binding.appCompatButton2
         val button3 = binding.appCompatButton3

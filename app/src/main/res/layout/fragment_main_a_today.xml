@@ -77,40 +77,43 @@
 
             <Button
                 android:id="@+id/button1"
-                android:layout_width="100dp"
-                android:layout_height="50dp"
+                android:layout_width="120dp"
+                android:layout_height="60dp"
                 android:layout_marginStart="15dp"
                 android:backgroundTint="@color/primary"
                 android:text="@string/all"
-                android:textSize="16sp" />
+                android:textSize="14sp" />
 
             <Button
                 android:id="@+id/button2"
-                android:layout_width="100dp"
-                android:layout_height="50dp"
+                android:layout_width="120dp"
+                android:layout_height="60dp"
+                android:textSize="14sp"
                 android:layout_marginStart="15dp"
                 android:backgroundTint="@color/card_view"
                 android:text="@string/in_the_morning"
-                android:textSize="16sp" />
+                 />
 
             <Button
                 android:id="@+id/button3"
-                android:layout_width="100dp"
-                android:layout_height="50dp"
+                android:layout_width="140dp"
+                android:layout_height="60dp"
+                android:textSize="14sp"
                 android:layout_marginStart="15dp"
                 android:backgroundTint="@color/card_view"
                 android:text="@string/in_the_afternoon"
-                android:textSize="16sp" />
+                 />
 
             <Button
                 android:id="@+id/button4"
                 android:layout_width="120dp"
-                android:layout_height="50dp"
+                android:layout_height="60dp"
+                android:textSize="14sp"
                 android:layout_marginStart="15dp"
                 android:layout_marginEnd="15dp"
                 android:backgroundTint="@color/card_view"
                 android:text="@string/in_the_evening"
-                android:textSize="16sp" />
+                 />
 
         </LinearLayout>
     </HorizontalScrollView>

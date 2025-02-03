@@ -174,7 +174,7 @@
                 android:layout_gravity="center_vertical"
                 android:layout_marginStart="15dp"
                 android:fontFamily="@font/montserrat_extra_bold"
-                android:text="Поделиться с друзьями"
+                android:text="@string/share_with_friends"
                 android:textColor="@color/white"
                 android:textSize="20dp" />
 
@@ -211,7 +211,7 @@
                 android:layout_gravity="center_vertical"
                 android:layout_marginStart="15dp"
                 android:fontFamily="@font/montserrat_extra_bold"
-                android:text="Оцените нас"
+                android:text="@string/rate_us"
                 android:textColor="@color/white"
                 android:textSize="20dp" />
 
@@ -248,7 +248,7 @@
                 android:layout_gravity="center_vertical"
                 android:layout_marginStart="15dp"
                 android:fontFamily="@font/montserrat_extra_bold"
-                android:text="Обратная связь"
+                android:text="@string/feedback"
                 android:textColor="@color/white"
                 android:textSize="20dp" />
 

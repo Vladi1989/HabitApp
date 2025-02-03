@@ -119,7 +119,7 @@
     <string name="no_matter">Неважно</string>
     <string name="in_the_morning">Утром</string>
     <string name="in_the_afternoon">Днем</string>
-    <string name="it_the_evening">Вечером</string>
+    <string name="in_the_evening">Вечером</string>
     <string name="target_on_day">Цель на день</string>
     <string name="advanced_settings">Расширенные настройки</string>
     <string name="notification">Напоминание</string>
@@ -130,7 +130,6 @@
     <string name="english">Английский</string>
     <string name="jan_4">4 янв</string>
     <string name="all">Все</string>
-    <string name="in_the_evening">Вечером</string>
     <string name="recommend_for_you">Рекомендовано для вас</string>
     <string name="all_way">Все пути</string>
     <string name="notification_">Уведомления</string>
@@ -179,5 +178,7 @@
     <string name="finish_trip">Окончание путешествия</string>
     <string name="these_are_simple_ones_that_dont_require">Эти простые, не требующие сверхусилий задачи помогут вам узнать, как выработать новые привычки и преодолеть трудности на начальной стадии</string>
     <string name="after_the_formation">После формирования нового образа жизни финальная неделя поможет вам закрепить то, что вы успешно наработали.</string>
+    <string name="share_with_friends">Поделиться с друзьями</string>
+    <string name="rate_us">Оцените нас</string>
 
 </resources>

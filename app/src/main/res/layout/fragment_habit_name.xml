@@ -352,7 +352,7 @@
                 android:layout_marginStart="8dp"
                 android:background="@drawable/button_shape_r12_gray"
                 android:fontFamily="@font/montserrat_extra_bold"
-                android:text="@string/In_the_morning"
+                android:text="@string/in_the_morning"
                 android:textColor="@color/white" />
         </LinearLayout>
 
@@ -379,7 +379,7 @@
                 android:layout_marginEnd="8dp"
                 android:background="@drawable/button_shape_r12_gray"
                 android:fontFamily="@font/montserrat_extra_bold"
-                android:text="@string/In_the_afternoon"
+                android:text="@string/in_the_afternoon"
                 android:textColor="@color/white" />
 
             <androidx.appcompat.widget.AppCompatButton
@@ -390,7 +390,7 @@
                 android:layout_marginStart="8dp"
                 android:background="@drawable/button_shape_r12_gray"
                 android:fontFamily="@font/montserrat_extra_bold"
-                android:text="@string/it_the_evening"
+                android:text="@string/in_the_evening"
                 android:textColor="@color/white" />
         </LinearLayout>
 
@@ -546,7 +546,7 @@
             android:text="@string/notification"
             android:textColor="#9A9797"
             android:textSize="18dp"
-            android:visibility="visible"
+            android:visibility="gone"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/llSettings" />
 
@@ -557,11 +557,13 @@
             android:layout_marginHorizontal="15dp"
             android:backgroundTint="@color/card_view"
             app:cardCornerRadius="12dp"
+            android:visibility="gone"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/textView25">
 
             <androidx.constraintlayout.widget.ConstraintLayout
+
                 android:layout_width="match_parent"
                 android:layout_height="match_parent">
 
@@ -624,11 +626,12 @@
             android:gravity="center"
             android:paddingBottom="15dp"
             android:text="@string/finish"
+            android:visibility="gone"
             android:textColor="#9A9797"
             android:layout_marginTop="10dp"
             android:layout_marginStart="20dp"
             android:textSize="18dp"
-            android:visibility="visible"
+
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/cv2" />
 
@@ -640,6 +643,7 @@
             android:background="@drawable/button_shape_r12_gray"
             android:fontFamily="@font/montserrat_extra_bold"
             android:text="@string/off"
+            android:visibility="gone"
             android:textColor="@color/white"
             app:layout_constraintStart_toStartOf="@+id/cv2"
             app:layout_constraintTop_toBottomOf="@+id/textView27" />
@@ -652,6 +656,7 @@
             android:background="@drawable/button_shape_r12_gray"
             android:fontFamily="@font/montserrat_extra_bold"
             android:text="@string/data"
+            android:visibility="gone"
             android:textColor="@color/white"
             app:layout_constraintEnd_toEndOf="@+id/cv2"
             app:layout_constraintTop_toBottomOf="@+id/textView27" />
@@ -661,7 +666,7 @@
             android:layout_marginTop="20dp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:visibility="visible"
+            android:visibility="gone"
             android:paddingVertical="5dp"
             android:background="@drawable/button_shape_graffit_r12"
             android:layout_marginHorizontal="15dp"
