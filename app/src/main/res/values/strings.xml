@@ -180,5 +180,84 @@
     <string name="after_the_formation">После формирования нового образа жизни финальная неделя поможет вам закрепить то, что вы успешно наработали.</string>
     <string name="share_with_friends">Поделиться с друзьями</string>
     <string name="rate_us">Оцените нас</string>
+    <string name="сalendar_viewpager">Календарь</string>
+    <string name="all_habit_viewpager">Все привычки</string>
+    <string name="progress_viewpager">Достижения</string>
+
+    <string name="walk_every_day">Ходите для\nздоровья\nкаждый день</string>
+    <string name="walk_every_day_desc">Это идеальное упражнение низкой интенсивности для людей в любой физической форме</string>
+    <string name="healthy_bmi">Здоровый ИМТ</string>
+    <string name="less_joint_pain">Меньше боли\nв суставах</string>
+    <string name="lower_blood_sugar">Ниже давление\nи уровень сахара</string>
+    <string name="better_cardiovascular">Лучшая работа кардиорес\nпираторной\nсистемы</string>
+    <string name="strong_immune_system">Сильные имунная и \nпищеварительная системы</string>
+    <string name="longer_life">Продление жизни</string>
+    <string name="varicose_prevention">Профилактика варикоза</string>
+
+    <string name="energetic_morning">Энергичное утро\nдля продуктивного\nдня</string>
+    <string name="energetic_morning_desc">Утро задает тон для всего дня.\nНачно обоснованный набор\nутренних действий поможет разбудиться энергию\nвашего тела</string>
+    <string name="wake_up_early">Раньше и легче\nвставать\nпо утрам</string>
+    <string name="self_confidence">Уверенность в\nсвоих силах</string>
+    <string name="more_energy">Больше энергии!</string>
+    <string name="healthy_schedule">Здоровое расписание</string>
+    <string name="healthy_lifestyle">Более правильный образ жизни</string>
+    <string name="balanced_immunity">Сбалансированный иммунитет</string>
+    <string name="brain_efficiency">Более эффективная работа мозга</string>
+
+    <string name="less_sitting">Проводите\nменьше времени\nсидя</string>
+    <string name="work_more_effectively">Работайте\nэффективнее</string>
+    <string name="disease_prevention">Профилактика\nразличных\nзаболеваний</string>
+    <string name="less_chronic_stress">Меньше\nхронического\nстресса</string>
+    <string name="better_memory">Лучше память!</string>
+    <string name="use_breaks_effectively">Эффективно используйте перерывы</string>
+    <string name="confidence_and_mood">Уверенность в себе\nи хорошее настроение</string>
+
+    <string name="stay_fit_office">Сохраняйте\nформу в офисе</string>
+    <string name="stay_fit_office_desc">Если время от времени двигаться\nи не сидеть все время,\nэто разбудит мозг и даст силы\nпридумывать и творить.</string>
+    <string name="your_l_way">Ваш личный путь</string>
+
+
+
+
+
+
+    <string name="rituals_before_sleep">Ритуалы перед\nсном</string>
+    <string name="scientific_proof">Научно доказано, что определенные\nритуалы перед сном позволяют справится с нарушениями сна и избыточным стрессом</string>
+    <string name="goodbye_insomnia">Попрощайтесь с\nбессонницей</string>
+    <string name="fall_asleep_quicker_and_deeper">Засыпайте\nбыстрее и\nкрепче</string>
+    <string name="more_energy_and_creativity">Больше сил\nи творческой\nэнергии</string>
+    <string name="strengthen_mental_health">Укрепите душевное здоровье</string>
+    <string name="strengthen_family_bonds">Укрепление связей с семьей</string>
+    <string name="more_brain_efficiency">Более эффективная работа мозга</string>
+    <string name="goodbye_sugar">Попрощайтесь с\nсахаром</string>
+    <string name="sugar_health_benefits">Доказано, что это отлично влияет на здоровье - от кожи до общего состояния!</string>
+    <string name="skin_condition">Улучшится\nсостояние кожи</string>
+    <string name="obesity_prevention">Профилактика\nожирения</string>
+    <string name="diabetes_prevention">Профилактика\nдиабета</string>
+    <string name="lower_blood_pressure">Ниже давление</string>
+    <string name="reduced_chronic_inflammation">Меньше хронических восполений</string>
+    <string name="less_plaque_and_caries">Меньше зубного налета и кариеса</string>
+    <string name="liver_fat_prevention">Профилактика ожирения печени\nнеалкогольного генеза</string>
+    <string name="meditation_for_harmony">Медитация для\nгармонии в душе</string>
+    <string name="meditation_connection">Медитация - это связь между внешним и вашим внутренним миром</string>
+    <string name="self_awareness_and_respect">Самосознание\nи самоуважение</string>
+    <string name="reduced_stress_and_pain">Меньше\nнапряжения\nи боли</string>
+    <string name="fight_addictions">Боритесь с\nзависимостями</string>
+    <string name="increase_stress_resilience">Повысьте\nустойчивость к стрессу</string>
+    <string name="slow_brain_aging">Замедлите старение мозга</string>
+    <string name="better_concentration">Лучшая концентрация внимания</string>
+    <string name="manage_emotions">Управляйте своими эмоциями</string>
+    <string name="placeholder_text">Текст-заглушка</string>
+    <string name="our_furry_friends">Наши пушистые\nдрузья</string>
+    <string name="pets_health_benefits">Домашние животные - наши самые верные спутники. Они всегда поддержат и помогут перенести социальную изоляцию</string>
+    <string name="less_depression_and_loneliness">Меньше\nдепрессии и\nодиночества</string>
+    <string name="healthier_heart">Здоровее\nсердце</string>
+    <string name="reduced_stress_and_anxiety">Меньше стресса\nи беспокойств</string>
+    <string name="more_social_interaction">Больше\nобщения с\nдругими людьми</string>
+    <string name="more_time_outdoors">Больше времени вне дома</string>
+    <string name="empathy_and_respect">Сопереживание и уважение</string>
+    <string name="therapy_and_emotional_support">Терапия и эмоциональная поддержка</string>
+
+
 
 </resources>

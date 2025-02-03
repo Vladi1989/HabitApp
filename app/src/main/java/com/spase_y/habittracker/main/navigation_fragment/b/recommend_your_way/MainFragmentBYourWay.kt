@@ -28,6 +28,149 @@ class MainFragmentBYourWay : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
+        val verticalItems = listOf(
+            VerticalRecommendItem(
+                getString(R.string.rituals_before_sleep),
+                R.drawable.b_list1,
+                FullRoadTopicData(
+                    R.drawable.sleep_girl,
+                    getString(R.string.scientific_proof),
+                    listOf(
+                        Pair(R.drawable.habit_icon_176, getString(R.string.goodbye_insomnia)),
+                        Pair(R.drawable.habit_icon_151, getString(R.string.fall_asleep_quicker_and_deeper)),
+                        Pair(R.drawable.habit_icon_27, getString(R.string.more_energy_and_creativity)),
+                        Pair(R.drawable.abc_ic_menu_paste_mtrl_am_alpha, getString(R.string.healthy_schedule)),
+                    ),
+                    listOf(
+                        getString(R.string.strengthen_mental_health),
+                        getString(R.string.strengthen_family_bonds),
+                        getString(R.string.more_brain_efficiency),
+                    ),
+                )
+            ),
+            VerticalRecommendItem(
+                getString(R.string.goodbye_sugar),
+                R.drawable.b_list_2,
+                FullRoadTopicData(
+                    R.drawable.b_big_list2,
+                    getString(R.string.sugar_health_benefits),
+                    listOf(
+                        Pair(R.drawable.ic_icon_journeystg_finish, getString(R.string.skin_condition)),
+                        Pair(R.drawable.habit_icon_9, getString(R.string.obesity_prevention)),
+                        Pair(R.drawable.ic_icon_general_check, getString(R.string.diabetes_prevention)),
+                        Pair(R.drawable.habit_icon_97, getString(R.string.lower_blood_pressure)),
+                    ),
+                    listOf(
+                        getString(R.string.reduced_chronic_inflammation),
+                        getString(R.string.less_plaque_and_caries),
+                        getString(R.string.liver_fat_prevention),
+                    ),
+                )
+            ),
+            VerticalRecommendItem(
+                getString(R.string.meditation_for_harmony),
+                R.drawable.b_list_3,
+                FullRoadTopicData(
+                    R.drawable.b_big_list3,
+                    getString(R.string.meditation_connection),
+                    listOf(
+                        Pair(R.drawable.ic_icon_general_circlecheck, getString(R.string.self_awareness_and_respect)),
+                        Pair(R.drawable.habit_icon_61, getString(R.string.reduced_stress_and_pain)),
+                        Pair(R.drawable.ic_icon_journeystg_solid, getString(R.string.fight_addictions)),
+                        Pair(R.drawable.habit_icon_100, getString(R.string.increase_stress_resilience)),
+                    ),
+                    listOf(
+                        getString(R.string.slow_brain_aging),
+                        getString(R.string.better_concentration),
+                        getString(R.string.manage_emotions),
+                        getString(R.string.placeholder_text),
+                    ),
+                )
+            ),
+            VerticalRecommendItem(
+                getString(R.string.our_furry_friends),
+                R.drawable.b_list_4,
+                FullRoadTopicData(
+                    R.drawable.b_big_list4,
+                    getString(R.string.pets_health_benefits),
+                    listOf(
+                        Pair(R.drawable.habit_icon_97, getString(R.string.less_depression_and_loneliness)),
+                        Pair(R.drawable.ic_icon_journeystg_adapt, getString(R.string.healthier_heart)),
+                        Pair(R.drawable.ic_icon_journeystg_finish, getString(R.string.reduced_stress_and_anxiety)),
+                        Pair(R.drawable.habit_icon_101, getString(R.string.more_social_interaction)),
+                    ),
+                    listOf(
+                        getString(R.string.more_time_outdoors),
+                        getString(R.string.empathy_and_respect),
+                        getString(R.string.therapy_and_emotional_support),
+                        getString(R.string.placeholder_text),
+                    ),
+                )
+            )
+        )
+
+        val horizontalItems = listOf(
+            HorizontalRecommendItem(
+                getString(R.string.walk_every_day), R.drawable.bg_horizont_1,
+                FullRoadTopicData(
+                    R.drawable.bg_horizont_1,
+                    getString(R.string.walk_every_day_desc),
+                    listOf(
+                        Pair(R.drawable.habit_icon_99, getString(R.string.healthy_bmi)),
+                        Pair(R.drawable.habit_icon_11, getString(R.string.less_joint_pain)),
+                        Pair(R.drawable.habit_icon_16, getString(R.string.lower_blood_sugar)),
+                        Pair(R.drawable.habit_icon_32, getString(R.string.better_cardiovascular)),
+                    ),
+                    listOf(
+                        getString(R.string.strong_immune_system),
+                        getString(R.string.longer_life),
+                        getString(R.string.varicose_prevention),
+                    ),
+                ),
+                "30"
+            ),
+            HorizontalRecommendItem(
+                getString(R.string.energetic_morning), R.drawable.bg_horizont_2,
+                FullRoadTopicData(
+                    R.drawable.bg_horizont_2,
+                    getString(R.string.energetic_morning_desc),
+                    listOf(
+                        Pair(R.drawable.habit_icon_12, getString(R.string.wake_up_early)),
+                        Pair(R.drawable.habit_icon_202, getString(R.string.self_confidence)),
+                        Pair(R.drawable.habit_icon_66, getString(R.string.more_energy)),
+                        Pair(R.drawable.ic_icon_journeystg_adapt, getString(R.string.healthy_schedule)),
+                    ),
+                    listOf(
+                        getString(R.string.healthy_lifestyle),
+                        getString(R.string.balanced_immunity),
+                        getString(R.string.brain_efficiency),
+                    ),
+                ),
+                "30"
+            ),
+            HorizontalRecommendItem(
+                getString(R.string.stay_fit_office), R.drawable.bg_horizont_3,
+                FullRoadTopicData(
+                    R.drawable.bg_horizont_3,
+                    getString(R.string.stay_fit_office_desc),
+                    listOf(
+                        Pair(R.drawable.habit_icon_12, getString(R.string.less_sitting)),
+                        Pair(R.drawable.habit_icon_81, getString(R.string.work_more_effectively)),
+                        Pair(R.drawable.ic_icon_journeystg_adapt, getString(R.string.disease_prevention)),
+                        Pair(R.drawable.habit_icon_32, getString(R.string.less_chronic_stress)),
+                    ),
+                    listOf(
+                        getString(R.string.better_memory),
+                        getString(R.string.use_breaks_effectively),
+                        getString(R.string.confidence_and_mood),
+                    ),
+                ),
+                "30"
+            ),
+        )
+
+
+
         // Данные для RecyclerView
         val adapter = HorizontalRecommendAdapter(horizontalItems){item ->
             val fragment = TopicDetailsFragment()
@@ -87,138 +230,5 @@ val sample = FullRoadTopicData(
 )
 
 
-val horizontalItems = listOf(
-    HorizontalRecommendItem("Ходите для\nздоровья\nкаждый день", R.drawable.bg_horizont_1,
-        FullRoadTopicData(
-            R.drawable.bg_horizont_1,
-            "Это идеальное упражнение низкой интенсивности для людей в любой физической форме",
-            listOf(
-                Pair(R.drawable.habit_icon_99, "Здоровый ИМТ"),
-                Pair(R.drawable.habit_icon_11, "Меньше боли\nв суставах"),
-                Pair(R.drawable.habit_icon_16, "Ниже давление\nи уровень сахара"),
-                Pair(R.drawable.habit_icon_32, "Лучшая работа кардиорес\nпираторной\nсистемы"),
-            ),
-            listOf(
-                "Сильные имунная и \nпищеварительная системы",
-                "Продление жизни",
-                "Профилактика варикоза",
 
-                ),
-        ),
-        "30"
-    ),
-    HorizontalRecommendItem("Энергичное утро\nдля продуктивного\nдня", R.drawable.bg_horizont_2,
-        FullRoadTopicData(
-            R.drawable.bg_horizont_2,
-            "Утро задает тон для всего дня.\nНачно обоснованный набор\nутренних действий поможет разбудиться энергию\nвашего тела",
-            listOf(
-                Pair(R.drawable.habit_icon_12, "Раньше и легче\nвставать\nпо утрам"),
-                Pair(R.drawable.habit_icon_202, "Уверенность в\nсвоих силах"),
-                Pair(R.drawable.habit_icon_66, "Больше энергии!"),
-                Pair(R.drawable.ic_icon_journeystg_adapt, "Здоровое расписание"),
-            ),
-            listOf(
-                "Более правильный образ жизни",
-                "Сбалансированный иммунитет",
-                "Более эффективная работа мозга",
 
-                ),
-        ),
-        "30"
-    ),
-    HorizontalRecommendItem("Сохраняйте\nформу в офисе", R.drawable.bg_horizont_3,
-        FullRoadTopicData(
-            R.drawable.bg_horizont_3,
-            "Если время от времени двигаться и не сидеть все время, это разбудт мозг и даст силы придумывать и творить.",
-            listOf(
-                Pair(R.drawable.habit_icon_12, "Проводите\nменьше времени\nсидя"),
-                Pair(R.drawable.habit_icon_81, "Работайте\nэффективнее"),
-                Pair(R.drawable.ic_icon_journeystg_adapt, "Профилактика\nразличных\nзаболеваний"),
-                Pair(R.drawable.habit_icon_32, "Меньше\nхронического\nстресса"),
-            ),
-            listOf(
-                "Лучше память!",
-                "Эффективно используйте перерывы",
-                "Уверенность в себе\nи хорошее настроение",
-
-                ),
-        ),
-        "30"
-    ),
-)
-
-val verticalItems = listOf(
-    VerticalRecommendItem("Ритуалы перед\nсном", R.drawable.b_list1,
-        FullRoadTopicData(
-            R.drawable.sleep_girl,
-            "Научно доказано, что определенные\nритуалы перед сном позволяют справится с нарушениями сна и избыточным стрессом",
-            listOf(
-                Pair(R.drawable.habit_icon_176, "Попращайтесь с\nбессонницей "),
-                Pair(R.drawable.habit_icon_151, "Засыпайте\nбыстрее и\nкрепче"),
-                Pair(R.drawable.habit_icon_27, "Больше сил\nи творческой\nэнергии"),
-                Pair(R.drawable.abc_ic_menu_paste_mtrl_am_alpha, "Здоровое\nрасписание"),
-            ),
-            listOf(
-                "Укрепите душевное здоровье",
-                "Укрепление связей с семьей",
-                "Более эффективная работа мозга",
-
-            ),
-        )
-    ),
-
-    VerticalRecommendItem("Попращайтесь с\nсахаром", R.drawable.b_list_2,
-        FullRoadTopicData(
-            R.drawable.b_big_list2,
-            "Доказано, что это отлично влияет на здоровье - от кожи до общего состояния!",
-            listOf(
-                Pair(R.drawable.ic_icon_journeystg_finish, "Улучшится\nсостояние кожи"),
-                Pair(R.drawable.habit_icon_9, "Профилактика\nожирения"),
-                Pair(R.drawable.ic_icon_general_check, "Профилактика\nдиабета"),
-                Pair(R.drawable.habit_icon_97, "Ниже давление"),
-            ),
-            listOf(
-                "Меньше хронических восполений",
-                "Меньше зубного налета и кариеса",
-                "Профилактика ожирения печени\nнеалкогольного генеза",
-
-            ),
-        )
-    ),
-    VerticalRecommendItem("Медитация для\nгармонии в душе", R.drawable.b_list_3,
-        FullRoadTopicData(
-            R.drawable.b_big_list3,
-            "Медитация - это связь между внешним и вашим внутренним миром",
-            listOf(
-                Pair(R.drawable.ic_icon_general_circlecheck, "Самосознание\nи самоуважение"),
-                Pair(R.drawable.habit_icon_61, "Меньше\nнапряжения\nи боли"),
-                Pair(R.drawable.ic_icon_journeystg_solid, "Боритесь с\nзависимостями"),
-                Pair(R.drawable.habit_icon_100, "Повысьте\nустойчивость к стрессу"),
-            ),
-            listOf(
-                "Замедлите старение мозга",
-                "Лучшая концентрация внимания",
-                "Управляйте своими эмоциями",
-                "text4",
-            ),
-        )
-    ),
-    VerticalRecommendItem("Наши пушистые\nдрузья", R.drawable.b_list_4,
-        FullRoadTopicData(
-            R.drawable.b_big_list4,
-            "Домашние животные - наши самые верные спутники. Они всегда поддержат и помогут перенести социальную изоляцию",
-            listOf(
-                Pair(R.drawable.habit_icon_97, "Меньше\nдепрессии и\nодиночества"),
-                Pair(R.drawable.ic_icon_journeystg_adapt, "Здоровее\nсердце"),
-                Pair(R.drawable.ic_icon_journeystg_finish, "Меньше стресса\nи беспокойств"),
-                Pair(R.drawable.habit_icon_101, "Больше\nобщения с\nдругими людьми"),
-            ),
-            listOf(
-                "Больше времени вне дома",
-                "Сопереживание и уважение",
-                "Терапия и эмоциональная поддержка",
-                "text4",
-            ),
-        )
-    ),
-)

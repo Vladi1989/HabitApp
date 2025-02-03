@@ -306,7 +306,7 @@
                 android:shadowDx="3"
                 android:shadowDy="3"
                 android:shadowRadius="3"
-                android:text="Ваш личный путь"
+                android:text="@string/your_l_way"
                 android:textColor="@color/text_default_light"
                 android:textSize="20dp"
                 app:layout_constraintStart_toStartOf="parent"

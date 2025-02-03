@@ -180,4 +180,80 @@
     <string name="after_the_formation">After forming a new lifestyle, the final week will help you consolidate what you’ve successfully built.</string>
     <string name="share_with_friends">Share with friends</string>
     <string name="rate_us">Rate us</string>
+    <string name="сalendar_viewpager">Calendar</string>
+    <string name="all_habit_viewpager">All habits</string>
+    <string name="progress_viewpager">Progress</string>
+
+
+    <string name="walk_every_day">Walk for\nHealth\nEvery Day</string>
+    <string name="walk_every_day_desc">This is the perfect low-intensity exercise for people of all fitness levels</string>
+    <string name="healthy_bmi">Healthy BMI</string>
+    <string name="less_joint_pain">Less joint\npain</string>
+    <string name="lower_blood_sugar">Lower blood\npressure &amp; sugar</string>
+    <string name="better_cardiovascular">Better cardio-\nrespiratory\nfunction</string>
+    <string name="strong_immune_system">Strong immune and\ndigestive systems</string>
+    <string name="longer_life">Longer life</string>
+    <string name="varicose_prevention">Varicose vein prevention</string>
+
+    <string name="energetic_morning">Energetic Morning\nfor a Productive Day</string>
+    <string name="energetic_morning_desc">Morning sets the tone for the day.A science-based morning routine will awaken your bodys energy</string>
+    <string name="wake_up_early">Wake up\nearly &amp; easily</string>
+    <string name="self_confidence">Confidence in\nyourself</string>
+    <string name="more_energy">More energy!</string>
+    <string name="healthy_schedule">Healthy schedule</string>
+    <string name="healthy_lifestyle">Healthier lifestyle</string>
+    <string name="balanced_immunity">Balanced immunity</string>
+    <string name="brain_efficiency">Better brain function</string>
+
+    <string name="less_sitting">Spend\nless time\nsitting</string>
+    <string name="work_more_effectively">Work\nmore effectively</string>
+    <string name="disease_prevention">Prevention\nof various\ndiseases</string>
+    <string name="less_chronic_stress">Less\nchronic\nstress</string>
+    <string name="better_memory">Better memory!</string>
+    <string name="use_breaks_effectively">Use breaks effectively</string>
+    <string name="confidence_and_mood">Confidence &amp;\ngood mood</string>
+
+    <string name="stay_fit_office">Stay Fit\nin the Office</string>
+    <string name="stay_fit_office_desc">Moving from time to time\ninstead of sitting all the time\nwill wake up your brain and boost creativity.</string>
+    <string name="your_l_way">Your way</string>
+
+
+
+    <string name="rituals_before_sleep">Rituals before sleep</string>
+    <string name="scientific_proof">It has been scientifically proven that certain rituals before sleep can help with sleep disorders and excessive stress.</string>
+    <string name="goodbye_insomnia">Say goodbye to insomnia</string>
+    <string name="fall_asleep_quicker_and_deeper">Fall asleep faster and deeper</string>
+    <string name="more_energy_and_creativity">More energy and creativity</string>
+    <string name="strengthen_mental_health">Strengthen mental health</string>
+    <string name="strengthen_family_bonds">Strengthen family bonds</string>
+    <string name="more_brain_efficiency">More efficient brain function</string>
+    <string name="goodbye_sugar">Say goodbye to sugar</string>
+    <string name="sugar_health_benefits">It is proven to have great effects on health, from skin to overall well-being!</string>
+    <string name="skin_condition">Improved skin condition</string>
+    <string name="obesity_prevention">Prevention of obesity</string>
+    <string name="diabetes_prevention">Prevention of diabetes</string>
+    <string name="lower_blood_pressure">Lower blood pressure</string>
+    <string name="reduced_chronic_inflammation">Reduced chronic inflammation</string>
+    <string name="less_plaque_and_caries">Less plaque and cavities</string>
+    <string name="liver_fat_prevention">Prevention of non-alcoholic fatty liver disease</string>
+    <string name="meditation_for_harmony">Meditation for inner \nharmony</string>
+    <string name="meditation_connection">Meditation is the connection between your external and internal worlds</string>
+    <string name="self_awareness_and_respect">Self-awareness and self-respect</string>
+    <string name="reduced_stress_and_pain">Less stress and pain</string>
+    <string name="fight_addictions">Fight addictions</string>
+    <string name="increase_stress_resilience">Increase stress resilience</string>
+    <string name="slow_brain_aging">Slow down brain aging</string>
+    <string name="better_concentration">Better focus and concentration</string>
+    <string name="manage_emotions">Manage your emotions</string>
+    <string name="placeholder_text">Placeholder text</string>
+    <string name="our_furry_friends">Our furry friends</string>
+    <string name="pets_health_benefits">Pets are our most loyal companions. They are always there to support and help with social isolation.</string>
+    <string name="less_depression_and_loneliness">Less depression and loneliness</string>
+    <string name="healthier_heart">Healthier heart</string>
+    <string name="reduced_stress_and_anxiety">Reduced stress and anxiety</string>
+    <string name="more_social_interaction">More social interaction</string>
+    <string name="more_time_outdoors">More time outdoors</string>
+    <string name="empathy_and_respect">Empathy and respect</string>
+    <string name="therapy_and_emotional_support">Therapy and emotional support</string>
+
 </resources>

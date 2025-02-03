@@ -56,9 +56,9 @@ class MainFragmentCHistory : Fragment() {
         viewPager.adapter = adapter
         TabLayoutMediator(tabLayout, viewPager) { tab, position ->
             tab.text = when (position) {
-                0 -> "Календарь"
-                1 -> "Все привычки"
-                2 -> "Достижения"
+                0 -> getString(R.string.сalendar_viewpager)
+                1 -> getString(R.string.all_habit_viewpager)
+                2 -> getString(R.string.progress_viewpager)
                 else -> null
             }
         }.attach()
