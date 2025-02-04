@@ -257,7 +257,71 @@
     <string name="more_time_outdoors">Больше времени вне дома</string>
     <string name="empathy_and_respect">Сопереживание и уважение</string>
     <string name="therapy_and_emotional_support">Терапия и эмоциональная поддержка</string>
+    <string name="relieve_stress">Снять стресс</string>
+    <string name="try_something_new">Попробовать что-то новое</string>
+    <string name="achieve_greater_concentration">Добиться большей сосредоточенности</string>
+    <string name="improve_relationships">Улучшить отношения</string>
+    <string name="sleep_better">Спать лучше</string>
+    <string name="or_enter_your_own">Или введите свою собственную</string>
+    <string name="your_first_habit">Ваша первая привычка</string>
+    <string name="days_of_habits">Дни привычек</string>
+    <string name="_d">6 д.в неделю</string>
+    <string name="_3">3 д. в месяц</string>
+    <string name="_d_per_year">3 д.в году</string>
+    <string name="select_days">Выберите дни</string>
+    <string name="days_in_week">в неделю</string>
+    <string name="days_in_month">в месяц</string>
+    <string name="days_in_year">в году</string>
+    <string name="day_suffix_1">день</string>
+    <string name="day_suffix_2_4">дня</string>
+    <string name="day_suffix_other">дней</string>
+
+    <string-array name="day_target">
+        <item>Выкл</item>
+        <item>Длительность</item>
+        <item>Повторение</item>
+    </string-array>
+
+    <string name="habit_1_title">Вы лучший</string>
+    <string name="habit_1_description">Скажите это себе, когда проснетесь</string>
+
+    <string name="habit_2_title">Пейте воду</string>
+    <string name="habit_2_description">Выпивайте стакан воды утром</string>
+
+    <string name="habit_3_title">Двигайтесь</string>
+    <string name="habit_3_description">Добавьте 10 минут упражнений в день</string>
+
+    <string name="habit_4_title">Планируйте</string>
+    <string name="habit_4_description">Запланируйте свой день заранее</string>
+
+    <string name="habit_5_title">Будьте благодарны</string>
+    <string name="habit_5_description">Напишите 3 вещи, за которые вы благодарны</string>
+
+    <string name="date_today">Сегодня</string>
+    <string name="date_tomorrow">Завтра</string>
+    <string name="date_yesterday">Вчера</string>
+    <string name="date_pattern">dd MMMM yyyy</string>
+
+    <string name="delete_all_data_title">Delete all data?</string>
+    <string name="delete_all_data_message">Are you sure you want to reset the app settings and delete all data?</string>
+
+    <string-array name="days_of_week">
+        <item>Понедельник</item>
+        <item>Вторник</item>
+        <item>Среда</item>
+        <item>Четверг</item>
+        <item>Пятница</item>
+        <item>Суббота</item>
+        <item>Воскресенье</item>
+    </string-array>
+
+    <string name="email_subject">Обратная связь</string>
+    <string name="email_body">Ваше сообщение здесь...</string>
+
+    <string name="share_text">Текст для отправки через приложение</string>
 
 
+    <string name="log_hours_selected">Часы выбраны: %1$d</string>
+    <string name="log_minutes_selected">Минуты выбраны: %1$d</string>
 
 </resources>

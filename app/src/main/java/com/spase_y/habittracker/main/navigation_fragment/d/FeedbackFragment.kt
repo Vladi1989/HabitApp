@@ -35,8 +35,8 @@ class FeedbackFragment : Fragment() {
         binding.btnGoToMail.setOnClickListener {
             sendEmail(
                 emailAddress = "example@example.com",
-                subject = "Обратная связь",
-                body = "Ваше сообщение здесь..."
+                subject = getString(R.string.email_subject),
+                body = getString(R.string.email_body)
             )
         }
     }

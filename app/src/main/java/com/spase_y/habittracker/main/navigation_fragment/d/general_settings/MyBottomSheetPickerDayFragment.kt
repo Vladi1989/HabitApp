@@ -11,9 +11,7 @@ import com.spase_y.habittracker.R
 class MyBottomSheetPickerDayFragment : BottomSheetDialogFragment() {
 
     private var callback: ((String) -> Unit)? = null
-    private val daysOfWeek = arrayOf(
-        "Понедельник", "Вторник", "Среда", "Четверг", "Пятница", "Суббота", "Воскресенье"
-    )
+    private val daysOfWeek = resources.getStringArray(R.array.days_of_week)
 
     fun setCallback(callback: (String) -> Unit) {
         this.callback = callback

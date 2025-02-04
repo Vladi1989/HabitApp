@@ -9,20 +9,24 @@ import com.google.android.material.bottomsheet.BottomSheetDialogFragment
 import com.spase_y.habittracker.R
 import com.spase_y.habittracker.main.navigation_fragment.d.general_settings.MyBottomSheetPickerDayFragment
 
-class MyBottomSheetPickerDayTargetFragment:BottomSheetDialogFragment() {
+class MyBottomSheetPickerDayTargetFragment: BottomSheetDialogFragment() {
     private var callback: ((String) -> Unit)? = null
-    private val dayTarget = arrayOf(
-        "Выкл", "Длительность", "Повторение"
-    )
+
+    private val dayTarget: Array<String> by lazy {
+        resources.getStringArray(R.array.day_target) // Получаем массив строк из ресурсов
+    }
+
     fun setCallback(callback: (String) -> Unit) {
         this.callback = callback
     }
+
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
         return inflater.inflate(R.layout.bottom_sheet_target, container, false)
     }
+
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
@@ -49,8 +53,8 @@ class MyBottomSheetPickerDayTargetFragment:BottomSheetDialogFragment() {
     }
 
     companion object {
-        fun newInstance(): MyBottomSheetPickerDayFragment {
-            return MyBottomSheetPickerDayFragment()
+        fun newInstance(): MyBottomSheetPickerDayTargetFragment {
+            return MyBottomSheetPickerDayTargetFragment()
         }
     }
 }

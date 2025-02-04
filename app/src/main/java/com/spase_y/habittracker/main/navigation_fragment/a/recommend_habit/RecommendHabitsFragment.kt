@@ -27,32 +27,32 @@ class RecommendHabitsFragment : Fragment() {
 
         val habits = listOf(
             Habit(
-                "Вы лучший",
-                "Скажите это себе, когда проснетесь",
+                getString(R.string.habit_1_title),
+                getString(R.string.habit_1_description),
                 R.drawable.ic_icon_general_video,
                 R.drawable.ic_icon_general_enter
             ),
             Habit(
-                "Пейте воду",
-                "Выпивайте стакан воды утром",
+                getString(R.string.habit_2_title),
+                getString(R.string.habit_2_description),
                 R.drawable.ic_icon_general_video,
                 R.drawable.ic_icon_general_enter
             ),
             Habit(
-                "Двигайтесь",
-                "Добавьте 10 минут упражнений в день",
+                getString(R.string.habit_3_title),
+                getString(R.string.habit_3_description),
                 R.drawable.ic_icon_general_video,
                 R.drawable.ic_icon_general_enter
             ),
             Habit(
-                "Планируйте",
-                "Запланируйте свой день заранее",
+                getString(R.string.habit_4_title),
+                getString(R.string.habit_4_description),
                 R.drawable.ic_icon_general_video,
                 R.drawable.ic_icon_general_enter
             ),
             Habit(
-                "Будьте благодарны",
-                "Напишите 3 вещи,\nза которые вы благодарны",
+                getString(R.string.habit_5_title),
+                getString(R.string.habit_5_description),
                 R.drawable.ic_icon_general_video,
                 R.drawable.ic_icon_general_enter
             )

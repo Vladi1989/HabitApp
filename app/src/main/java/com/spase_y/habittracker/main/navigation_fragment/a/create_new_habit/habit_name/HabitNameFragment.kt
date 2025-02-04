@@ -26,6 +26,7 @@ import com.spase_y.habittracker.databinding.FragmentMainCHistoryBinding
 import com.spase_y.habittracker.main.navigation_fragment.a.MainFragmentAToday
 import com.spase_y.habittracker.main.navigation_fragment.a.create_new_habit.habit_name.habit_days.HabitDaysFragment
 import com.spase_y.habittracker.main.navigation_fragment.d.general_settings.MyBottomSheetPickerDayFragment
+import com.spase_y.habittracker.main.navigation_fragment.d.notification.MyBottomSheetTimeFragment
 
 class HabitNameFragment : Fragment() {
     private var _binding: FragmentHabitNameBinding? = null
@@ -41,6 +42,8 @@ class HabitNameFragment : Fragment() {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
+
+
 
         binding.llSettings.setOnClickListener {
             // Проверяем текущую видимость элементов
@@ -194,6 +197,15 @@ class HabitNameFragment : Fragment() {
         drawable?.setTint(currentSelectedColor)
         binding.colorPickerCircle.background = drawable
         binding.imageView10.setColorFilter(currentSelectedColor)
+
+        binding.showBottomSheetButton.setOnClickListener {
+            val bottomSheet = MyBottomSheetTimeFragment.newInstance(0, 23)
+            bottomSheet.setCallback { selectedTime ->
+                binding.showBottomSheetButton.text = selectedTime  // Отобразим выбранное время в TextView
+            }
+            bottomSheet.show(parentFragmentManager, "TimePicker")
+        }
+
     }
 
     val _currentSelectedColor by lazy {
@@ -202,6 +214,10 @@ class HabitNameFragment : Fragment() {
     var currentSelectedColor = android.graphics.Color.BLACK
 
     var currentSelectedIcon = R.drawable.habit_icon_4
+
+
+
+
     private fun showIconPicker() {
         val icons = mutableListOf<Int>() // Создаем изменяемый список иконок
 

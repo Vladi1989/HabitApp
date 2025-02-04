@@ -109,7 +109,7 @@ class MainFragmentDMe : Fragment() {
     private fun shareContentToApp(app: ShareApp) {
         val shareIntent = Intent(Intent.ACTION_SEND).apply {
             type = "text/plain"
-            putExtra(Intent.EXTRA_TEXT, "Текст для отправки через приложение")
+            putExtra(Intent.EXTRA_TEXT, getString(R.string.share_text))
             setClassName(app.packageName, app.className)
         }
         startActivity(shareIntent)

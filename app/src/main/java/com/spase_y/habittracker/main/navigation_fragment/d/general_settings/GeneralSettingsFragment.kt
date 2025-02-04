@@ -78,8 +78,8 @@ class GeneralSettingsFragment : Fragment() {
         val negativeButton = dialog.findViewById<Button>(R.id.negativeButton)
 
         // Установите текст
-        titleTextView.text = "Удалить все данные?"
-        messageTextView.text = "Вы уверены, что хотите сбросить настройки приложения и удалить все данные?"
+        titleTextView.text = getString(R.string.delete_all_data_title)
+        messageTextView.text = getString(R.string.delete_all_data_message)
 
         // Обработчики кнопок
         positiveButton.setOnClickListener {

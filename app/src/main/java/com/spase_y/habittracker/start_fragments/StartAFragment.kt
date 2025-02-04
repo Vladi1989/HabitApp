@@ -43,7 +43,7 @@ class StartAFragment : Fragment() {
             value = 8
             setOnValueChangedListener { _, _, newVal ->
                 // Обработка изменения значения часов
-                Log.d("Picker", "Часы выбраны: $newVal")
+                Log.d("Picker", getString(R.string.log_hours_selected, newVal))
             }
         }
 
@@ -53,7 +53,7 @@ class StartAFragment : Fragment() {
             value = 30
             setOnValueChangedListener { _, _, newVal ->
                 // Обработка изменения значения минут
-                Log.d("Picker", "Минуты выбраны: $newVal")
+                Log.d("Picker", getString(R.string.log_minutes_selected, newVal))
             }
         }
     }

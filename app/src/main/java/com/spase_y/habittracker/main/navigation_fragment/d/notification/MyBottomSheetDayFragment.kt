@@ -95,7 +95,7 @@ class MyBottomSheetDayFragment(private var selectedDays: MutableList<Days>, val 
     private fun updateSelectedDaysText() {
         // Обновляем текст в TextView
         binding.textViewMessage2.text = if (selectedDays.isEmpty()) {
-            "Выберите дни"
+            getString(R.string.select_days)
         } else {
             selectedDays.joinToString(", ")
         }

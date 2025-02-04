@@ -255,5 +255,67 @@
     <string name="more_time_outdoors">More time outdoors</string>
     <string name="empathy_and_respect">Empathy and respect</string>
     <string name="therapy_and_emotional_support">Therapy and emotional support</string>
+    <string name="relieve_stress">Relieve stress</string>
+    <string name="try_something_new">Try something new</string>
+    <string name="achieve_greater_concentration">Achieve greater concentration</string>
+    <string name="improve_relationships">Improve relationships</string>
+    <string name="sleep_better">Sleep better</string>
+    <string name="or_enter_your_own">Or enter your own</string>
+    <string name="your_first_habit">Your first habit</string>
+    <string name="days_of_habits">Days of habits</string>
+    <string name="_d">6 days per week</string>
+    <string name="_3">3 d. per month</string>
+    <string name="_d_per_year">3 d. per year</string>
+    <string name="select_days">Select days</string>
+    <string name="days_in_week">per week</string>
+    <string name="days_in_month">per month</string>
+    <string name="days_in_year">per year</string>
+    <string name="day_suffix_1">day</string>
+    <string name="day_suffix_2_4">days</string>
+    <string name="day_suffix_other">days</string>
 
-</resources>
+    <string-array name="day_target">
+        <item>Off</item>
+        <item>Duration</item>
+        <item>Repetition</item>
+    </string-array>
+
+
+    <string name="habit_1_title">You are the best</string>
+    <string name="habit_1_description">Say this to yourself when you wake up</string>
+    <string name="habit_2_title">Drink water</string>
+    <string name="habit_2_description">Drink a glass of water in the morning</string>
+    <string name="habit_3_title">Move</string>
+    <string name="habit_3_description">Add 10 minutes of exercise per day</string>
+    <string name="habit_4_title">Plan</string>
+    <string name="habit_4_description">Plan your day in advance</string>
+    <string name="habit_5_title">Be grateful</string>
+    <string name="habit_5_description">Write down 3 things you are grateful for</string>
+
+    <string name="date_today">Today</string>
+    <string name="date_tomorrow">Tomorrow</string>
+    <string name="date_yesterday">Yesterday</string>
+    <string name="date_pattern">dd MMMM yyyy</string>
+
+    <string name="delete_all_data_title">Удалить все данные?</string>
+    <string name="delete_all_data_message">Вы уверены, что хотите сбросить настройки приложения и удалить все данные?</string>
+
+    <string-array name="days_of_week">
+        <item>Monday</item>
+        <item>Tuesday</item>
+        <item>Wednesday</item>
+        <item>Thursday</item>
+        <item>Friday</item>
+        <item>Saturday</item>
+        <item>Sunday</item>
+    </string-array>
+
+    <string name="email_subject">Feedback</string>
+    <string name="email_body">Your message here...</string>
+
+    <string name="share_text">Text to share via the app</string>
+
+    <string name="log_hours_selected">Hours selected: %1$d</string>
+    <string name="log_minutes_selected">Minutes selected: %1$d</string>
+
+    </resources>

@@ -297,7 +297,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginHorizontal="8dp"
-                android:text="Или введите свою собственную"
+                android:text="@string/or_enter_your_own"
                 android:textColor="#CCD3D2D2"
                 android:textSize="16sp" />
             <View
@@ -349,7 +349,7 @@
                     android:layout_marginEnd="50dp"
                     android:background="@null"
                     android:fontFamily="@font/montserrat_extra_bold"
-                    android:hint="Ваша первая привычка"
+                    android:hint="@string/your_first_habit"
                     android:inputType="text"
                     android:textColor="@color/white"
                     android:textColorHint="@color/gray"

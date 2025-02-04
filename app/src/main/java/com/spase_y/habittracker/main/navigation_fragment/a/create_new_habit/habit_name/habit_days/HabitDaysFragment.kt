@@ -113,33 +113,35 @@ class HabitDaysFragment : Fragment() {
 
     private fun updateSelectedDaysText() {
         binding.textView6.text = if (selectedDayIndex == null) {
-            "Выберите дни"
+            getString(R.string.select_days)
         } else {
-            "$selectedDayIndex ${getDaySuffix(selectedDayIndex!!)} в неделю"
+            "$selectedDayIndex ${getDaySuffix(selectedDayIndex!!)} ${getString(R.string.days_in_week)}"
         }
     }
 
     private fun getDaySuffix(day: Int): String {
         return when (day) {
-            1 -> "день"
-            2, 3, 4 -> "дня"
-            else -> "дней"
+            1 -> getString(R.string.day_suffix_1)  // "день" или "day"
+            2, 3, 4 -> getString(R.string.day_suffix_2_4)  // "дня" или "days"
+            else -> getString(R.string.day_suffix_other)  // "дней" или "days"
         }
     }
+
     private fun updateTextViewWithDays(days: Int) {
-        val text = "$days ${getDaySuffix(days)} в месяц"
+        val text = "$days ${getDaySuffix(days)} ${getString(R.string.days_in_month)}"
         binding.textView14.text = text
     }
+
     private fun updateYearDaysTextView(days: Int) {
-        val text = "$days ${getDaySuffixForYear(days)} в году"
+        val text = "$days ${getDaySuffixForYear(days)} ${getString(R.string.days_in_year)}"
         binding.textView22.text = text
     }
 
     private fun getDaySuffixForYear(day: Int): String {
         return when (day) {
-            1 -> "день"
-            2, 3, 4 -> "дня"
-            else -> "дней"
+            1 -> getString(R.string.day_suffix_1)
+            2, 3, 4 -> getString(R.string.day_suffix_2_4)
+            else -> getString(R.string.day_suffix_other)
         }
     }
 

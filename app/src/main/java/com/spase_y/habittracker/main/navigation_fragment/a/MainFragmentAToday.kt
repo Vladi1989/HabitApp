@@ -153,10 +153,10 @@ class MainFragmentAToday : Fragment() {
         val daysDifference = ChronoUnit.DAYS.between(localDate, date)
 
         val text = when (daysDifference) {
-            0L -> "Сегодня" // Если выбранная дата совпадает с текущей
-            1L -> "Завтра" // Если дата на 1 день больше текущей
-            -1L -> "Вчера" // Если дата на 1 день меньше текущей
-            else -> date.format(DateTimeFormatter.ofPattern("dd MMMM yyyy", Locale("ru"))) // Если это другая дата
+            0L -> getString(R.string.date_today)
+            1L -> getString(R.string.date_tomorrow)
+            -1L -> getString(R.string.date_yesterday)
+            else -> date.format(DateTimeFormatter.ofPattern(getString(R.string.date_pattern), Locale("ru")))
         }
 
         binding.textView.text = text
