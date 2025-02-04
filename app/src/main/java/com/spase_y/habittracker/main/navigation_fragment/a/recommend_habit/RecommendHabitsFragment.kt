@@ -25,6 +25,10 @@ class RecommendHabitsFragment : Fragment() {
         super.onViewCreated(view, savedInstanceState)
         requireActivity().findViewById<View>(R.id.llNavigation)?.visibility = View.GONE
 
+        binding.ivArrowCrossBack.setOnClickListener {
+            requireActivity().onBackPressedDispatcher.onBackPressed()
+        }
+
         val habits = listOf(
             Habit(
                 getString(R.string.habit_1_title),

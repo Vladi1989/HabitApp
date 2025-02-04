@@ -357,6 +357,7 @@
         android:layout_width="match_parent"
         android:layout_height="100dp"
         android:layout_marginTop="15dp"
+        android:visibility="gone"
         android:layout_marginHorizontal="10dp"
         android:background="@drawable/button_shape_graffit_r12"
         app:layout_constraintEnd_toEndOf="parent"

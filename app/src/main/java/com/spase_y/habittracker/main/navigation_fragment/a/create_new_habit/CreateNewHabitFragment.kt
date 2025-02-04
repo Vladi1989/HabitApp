@@ -32,7 +32,12 @@ class CreateNewHabitFragment : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
-        
+        binding.clList1.setOnClickListener {
+            requireActivity().supportFragmentManager.beginTransaction()
+                .replace(R.id.fcvMainApp,RecommendHabitsFragment())
+                .addToBackStack(null)
+                .commit()
+        }
 
         // Устанавливаем начальные цвета
         updateCardViewColors()

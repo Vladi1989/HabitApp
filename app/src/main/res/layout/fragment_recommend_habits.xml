@@ -7,12 +7,22 @@
     android:background="@color/login_ui_bg_color"
     tools:context=".main.navigation_fragment.a.recommend_habit.RecommendHabitsFragment">
 
+    <ImageView
+        android:id="@+id/ivArrowCrossBack"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_margin="10dp"
+        android:background="@drawable/ic_icon_back_x"
+        android:backgroundTint="@color/white"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
     <TextView
         android:id="@+id/textView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="10dp"
-        android:layout_marginTop="10dp"
+        android:layout_marginTop="40dp"
         android:fontFamily="@font/montserrat_extra_bold"
         android:gravity="center"
         android:text="@string/habit_in_trend"
