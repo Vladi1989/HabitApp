@@ -8,8 +8,11 @@ import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 import com.spase_y.habittracker.R
 
-class RecommendHabitAdapter(private val items: List<Habit>) :
-    RecyclerView.Adapter<RecommendHabitAdapter.HabitViewHolder>() {
+class RecommendHabitAdapter(
+    private val items: List<Habit>,
+    private val onItemClick: (Habit) -> Unit // Лямбда для обработки нажатий
+) : RecyclerView.Adapter<RecommendHabitAdapter.HabitViewHolder>() {
+
 
     inner class HabitViewHolder(view: View) : RecyclerView.ViewHolder(view) {
         val imageViewIcon: ImageView = view.findViewById(R.id.imageView5)
@@ -30,6 +33,10 @@ class RecommendHabitAdapter(private val items: List<Habit>) :
         holder.textViewDescription.text = habit.description
         holder.imageViewIcon.setImageResource(habit.iconResId)
         holder.imageViewArrow.setImageResource(habit.arrowResId)
+
+        holder.itemView.setOnClickListener {
+            onItemClick(habit)
+        }
     }
 
     override fun getItemCount(): Int = items.size

@@ -317,5 +317,6 @@
 
     <string name="log_hours_selected">Hours selected: %1$d</string>
     <string name="log_minutes_selected">Minutes selected: %1$d</string>
+    <string name="days">DAYS</string>
 
-    </resources>
+</resources>

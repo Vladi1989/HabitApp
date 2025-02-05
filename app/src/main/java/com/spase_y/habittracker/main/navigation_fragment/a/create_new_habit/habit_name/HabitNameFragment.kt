@@ -53,7 +53,6 @@ class HabitNameFragment : Fragment() {
                 binding.cv2.visibility = View.GONE
                 binding.appCompatButton9.visibility = View.GONE
                 binding.appCompatButton10.visibility = View.GONE
-                binding.llDaysInWeek.visibility = View.GONE
                 binding.textView27.visibility = View.GONE
             } else {
                 // Если элементы скрыты, показываем их
@@ -61,7 +60,6 @@ class HabitNameFragment : Fragment() {
                 binding.cv2.visibility = View.VISIBLE
                 binding.appCompatButton9.visibility = View.VISIBLE
                 binding.appCompatButton10.visibility = View.VISIBLE
-                binding.llDaysInWeek.visibility = View.VISIBLE
                 binding.textView27.visibility = View.VISIBLE
             }
         }
@@ -78,11 +76,24 @@ class HabitNameFragment : Fragment() {
 
         val finishButtons = listOf(buttonOff,buttonData)
 
+        binding.swTotal.isChecked = false // Отключаем switch при старте
+        binding.showBottomSheetButton.visibility = View.GONE // Скрываем кнопку при старте
+
+        binding.swTotal.setOnCheckedChangeListener { _, isChecked ->
+            if (isChecked) {
+                binding.showBottomSheetButton.visibility = View.VISIBLE
+            } else {
+                binding.showBottomSheetButton.visibility = View.GONE
+            }
+        }
+
         buttonOff.setOnClickListener {
             setActiveButton(buttonOff,finishButtons)
+            binding.llDaysInWeek.visibility = View.GONE
         }
         buttonData.setOnClickListener {
             setActiveButton(buttonData,finishButtons)
+            binding.llDaysInWeek.visibility = View.VISIBLE
         }
 
         // Устанавливаем обработчик кликов для каждой кнопки

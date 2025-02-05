@@ -30,9 +30,10 @@ class ColorPickerBottomSheetFragment(
             android.graphics.Color.MAGENTA,
             android.graphics.Color.LTGRAY,
             android.graphics.Color.DKGRAY,
-            android.graphics.Color.BLACK,           // Новый цвет: черный
-            android.graphics.Color.parseColor("#FFA500"), // Новый цвет: оранжевый
-            android.graphics.Color.parseColor("#800080")  // Новый цвет: фиолетовый
+            android.graphics.Color.BLACK,           // Черный
+            android.graphics.Color.parseColor("#FFA500"), // Оранжевый
+            android.graphics.Color.parseColor("#800080"), // Фиолетовый
+            android.graphics.Color.parseColor("#4B0082")  // Индиго)
         )
 
         // Заполняем палитру цветов

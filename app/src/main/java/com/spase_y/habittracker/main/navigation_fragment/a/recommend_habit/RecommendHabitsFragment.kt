@@ -8,6 +8,7 @@ import android.view.ViewGroup
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.spase_y.habittracker.R
 import com.spase_y.habittracker.databinding.FragmentRecommendHabitsBinding
+import com.spase_y.habittracker.main.navigation_fragment.a.create_new_habit.habit_name.HabitNameFragment
 
 class RecommendHabitsFragment : Fragment() {
     private var _binding: FragmentRecommendHabitsBinding? = null
@@ -16,8 +17,8 @@ class RecommendHabitsFragment : Fragment() {
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
-    ): View? {
-        _binding = FragmentRecommendHabitsBinding.inflate(inflater,container,false)
+    ): View {
+        _binding = FragmentRecommendHabitsBinding.inflate(inflater, container, false)
         return binding.root
     }
 
@@ -62,7 +63,20 @@ class RecommendHabitsFragment : Fragment() {
             )
         )
 
-        val adapter = RecommendHabitAdapter(habits)
+        val adapter = RecommendHabitAdapter(habits) { selectedHabit ->
+            val fragment = HabitNameFragment().apply {
+                arguments = Bundle().apply {
+                    putString("habit_title", selectedHabit.title)
+                    putString("habit_description", selectedHabit.description)
+                }
+            }
+            parentFragmentManager.beginTransaction()
+                .replace(R.id.fcvMainApp, fragment) // Замените на ваш контейнер
+                .addToBackStack(null)
+                .commit()
+        }
+
+        // Устанавливаем менеджер компоновки и адаптер
         binding.rvRecommendHabit.layoutManager = LinearLayoutManager(requireContext())
         binding.rvRecommendHabit.adapter = adapter
     }

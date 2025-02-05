@@ -323,5 +323,6 @@
 
     <string name="log_hours_selected">Часы выбраны: %1$d</string>
     <string name="log_minutes_selected">Минуты выбраны: %1$d</string>
+    <string name="days">ДНИ</string>
 
 </resources>
