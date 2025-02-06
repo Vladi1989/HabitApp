@@ -82,6 +82,7 @@
                 android:layout_marginStart="15dp"
                 android:backgroundTint="@color/primary"
                 android:text="@string/all"
+                android:textColor="@color/white"
                 android:textSize="14sp" />
 
             <Button
@@ -92,6 +93,8 @@
                 android:layout_marginStart="15dp"
                 android:backgroundTint="@color/card_view"
                 android:text="@string/in_the_morning"
+                android:textColor="@color/white"
+
                  />
 
             <Button
@@ -102,6 +105,8 @@
                 android:layout_marginStart="15dp"
                 android:backgroundTint="@color/card_view"
                 android:text="@string/in_the_afternoon"
+                android:textColor="@color/white"
+
                  />
 
             <Button
@@ -113,6 +118,8 @@
                 android:layout_marginEnd="15dp"
                 android:backgroundTint="@color/card_view"
                 android:text="@string/in_the_evening"
+                android:textColor="@color/white"
+
                  />
 
         </LinearLayout>
@@ -166,6 +173,8 @@
         android:drawableLeft="@drawable/arrow_back"
         android:drawableTint="@color/white"
         android:textSize="18sp"
+        android:textColor="@color/white"
+
         android:layout_marginBottom="185dp"
         android:elevation="10dp"
         android:layout_marginEnd="-20dp"

@@ -283,19 +283,19 @@
     </string-array>
 
     <string name="habit_1_title">Вы лучший</string>
-    <string name="habit_1_description">Скажите это себе, когда проснетесь</string>
+    <string name="habit_1_description">Скажите это себе,когда\nпроснетесь</string>
 
     <string name="habit_2_title">Пейте воду</string>
-    <string name="habit_2_description">Выпивайте стакан воды утром</string>
+    <string name="habit_2_description">Выпивайте стакан воды\nутром</string>
 
     <string name="habit_3_title">Двигайтесь</string>
-    <string name="habit_3_description">Добавьте 10 минут упражнений в день</string>
+    <string name="habit_3_description">Добавьте 10 минут\nупражнений в день</string>
 
     <string name="habit_4_title">Планируйте</string>
-    <string name="habit_4_description">Запланируйте свой день заранее</string>
+    <string name="habit_4_description">Запланируйте свой\nдень заранее</string>
 
     <string name="habit_5_title">Будьте благодарны</string>
-    <string name="habit_5_description">Напишите 3 вещи, за которые вы благодарны</string>
+    <string name="habit_5_description">Напишите 3 вещи, за\nкоторые вы благодарны</string>
 
     <string name="date_today">Сегодня</string>
     <string name="date_tomorrow">Завтра</string>

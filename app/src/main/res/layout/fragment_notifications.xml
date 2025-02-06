@@ -94,7 +94,7 @@
 
             <androidx.appcompat.widget.AppCompatButton
                 android:id="@+id/showBottomSheetButton"
-                android:layout_width="150dp"
+                android:layout_width="140dp"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="15dp"
                 android:textSize="16dp"
@@ -108,7 +108,7 @@
 
             <androidx.appcompat.widget.AppCompatButton
                 android:id="@+id/showBottomSheetDay"
-                android:layout_width="150dp"
+                android:layout_width="140dp"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="25dp"
                 android:layout_marginEnd="15dp"
@@ -170,7 +170,7 @@
 
             <androidx.appcompat.widget.AppCompatButton
                 android:id="@+id/showBottomSheetButton2"
-                android:layout_width="150dp"
+                android:layout_width="140dp"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="15dp"
                 android:textSize="16dp"
@@ -184,7 +184,7 @@
 
             <androidx.appcompat.widget.AppCompatButton
                 android:id="@+id/showBottomSheetDay2"
-                android:layout_width="150dp"
+                android:layout_width="140dp"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="25dp"
                 android:layout_marginEnd="15dp"
@@ -246,7 +246,7 @@
 
             <androidx.appcompat.widget.AppCompatButton
                 android:id="@+id/showBottomSheetButton3"
-                android:layout_width="150dp"
+                android:layout_width="140dp"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="15dp"
                 android:textSize="16dp"
@@ -260,7 +260,7 @@
 
             <androidx.appcompat.widget.AppCompatButton
                 android:id="@+id/showBottomSheetDay3"
-                android:layout_width="150dp"
+                android:layout_width="140dp"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="25dp"
                 android:layout_marginEnd="15dp"
@@ -322,7 +322,7 @@
 
             <androidx.appcompat.widget.AppCompatButton
                 android:id="@+id/showBottomSheetButton4"
-                android:layout_width="150dp"
+                android:layout_width="140dp"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="15dp"
                 android:textSize="16dp"
@@ -336,7 +336,7 @@
 
             <androidx.appcompat.widget.AppCompatButton
                 android:id="@+id/showBottomSheetDay4"
-                android:layout_width="150dp"
+                android:layout_width="140dp"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="25dp"
                 android:layout_marginEnd="15dp"

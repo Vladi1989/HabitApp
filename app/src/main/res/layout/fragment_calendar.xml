@@ -259,7 +259,7 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_marginTop="310dp"
-        android:background="@color/card_view"
+        android:background="@drawable/button_shape_r12_gray"
         android:orientation="vertical"
         android:padding="16dp"
         app:layout_constraintEnd_toEndOf="parent"
@@ -281,7 +281,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:gravity="center"
-            android:paddingBottom="16dp"
+            android:paddingBottom="4dp"
             android:text="01,2025"
             android:textColor="@color/white"
             android:textSize="24sp"
@@ -292,6 +292,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:columnCount="7"
+            android:elevation="10dp"
             android:rowCount="1">
 
 

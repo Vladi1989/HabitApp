@@ -282,15 +282,15 @@
 
 
     <string name="habit_1_title">You are the best</string>
-    <string name="habit_1_description">Say this to yourself when you wake up</string>
+    <string name="habit_1_description">Say this to yourself\nwhen you wake up</string>
     <string name="habit_2_title">Drink water</string>
-    <string name="habit_2_description">Drink a glass of water in the morning</string>
+    <string name="habit_2_description">Drink a glass of water\nin the morning</string>
     <string name="habit_3_title">Move</string>
-    <string name="habit_3_description">Add 10 minutes of exercise per day</string>
+    <string name="habit_3_description">Add 10 minutes of exercise\nper day</string>
     <string name="habit_4_title">Plan</string>
-    <string name="habit_4_description">Plan your day in advance</string>
+    <string name="habit_4_description">Plan your day\nin advance</string>
     <string name="habit_5_title">Be grateful</string>
-    <string name="habit_5_description">Write down 3 things you are grateful for</string>
+    <string name="habit_5_description">Write down 3 things you\nare grateful for</string>
 
     <string name="date_today">Today</string>
     <string name="date_tomorrow">Tomorrow</string>
